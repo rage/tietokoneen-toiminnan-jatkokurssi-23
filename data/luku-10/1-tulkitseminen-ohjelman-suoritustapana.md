@@ -88,6 +88,6 @@ Käsitteiden _emulointi_ ja _simulointi_ käyttö ei ole täysin vakiintunut, va
 
 ## Quizit 10.1
 <!-- Quiz 10.1.?? -->
-<div><quiz id="a15e1f66-8080-477e-b987-d550017610f8"></quiz></div>
-<div><quiz id="9c555a84-7c7e-42f0-9d45-cea8608b7497"></quiz></div>
-<div><quiz id="42571b0e-635b-452d-8533-3e87d91f423b"></quiz></div>
+<div><quiz id="917e9a56-15a6-5dd4-bcb6-a7344ccb1a76"></quiz></div>
+<div><quiz id="69a52ba4-50b0-55d3-85dd-ec043495f5e6"></quiz></div>
+<div><quiz id="67f2c3d4-1549-5cfe-8c51-7026876d57a5"></quiz></div>

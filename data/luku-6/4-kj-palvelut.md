@@ -76,10 +76,10 @@ MsgService equ   52
 
 <!-- quiz 6.4.??  ????? -->
 
-<div><quiz id="3881dfb4-23f7-4359-9e01-1ce56c51345b"></quiz></div>
-<div><quiz id="4befdfa3-3055-40ce-9470-26d4fb02a154"></quiz></div>
-<div><quiz id="4896697e-2e33-44b8-82dd-251e7ff728e3"></quiz></div>
-<div><quiz id="36e2b3d7-22ee-4f63-b56d-1c111ddda9b7"></quiz></div>
+<div><quiz id="0240320d-46ff-5838-b0b5-66fa4809e5ad"></quiz></div>
+<div><quiz id="e5c27d08-ffeb-579f-b301-594d91d0c2bc"></quiz></div>
+<div><quiz id="6fcd732e-7ac7-572e-b249-2d9171b86d14"></quiz></div>
+<div><quiz id="be6cd712-e7a1-5574-ab41-fb2b5fb610c3"></quiz></div>
 
 
 <text-box variant="example" name="Historiaa:  Williams Tube -muisti">
@@ -100,4 +100,4 @@ Tämä luku käsitteli aliohjelmien toteutusta. Kävimme läpi arvo- ja viitepar
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 
-<div><quiz id="4a9ca037-6fbe-4b31-91d7-4653c4f72f84"></quiz></div>
+<div><quiz id="04aa3879-6945-502e-8627-68da6f3b0b5f"></quiz></div>

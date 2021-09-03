@@ -103,6 +103,6 @@ Myös muita Java-suorittimia on tehty. Esimerkiksi, Sun [MAJC 5200](https://en.w
 
 
 <!--  quizit 10.3.???  -->
-<div><quiz id="b3490240-8ec5-4241-aa30-ecff6d74fc01"></quiz></div>
-<div><quiz id="bbc1c775-9584-4325-a316-f8325548445c"></quiz></div>
-<div><quiz id="4efaeccf-7649-48ed-a55d-4a71d99bcf71"></quiz></div>
+<div><quiz id="8375a65f-c359-5ae6-8f74-615037740178"></quiz></div>
+<div><quiz id="dde02d8e-c4a9-504c-9006-8baa34213ef5"></quiz></div>
+<div><quiz id="68eae7f6-fb43-5194-8328-46c906476c8d"></quiz></div>

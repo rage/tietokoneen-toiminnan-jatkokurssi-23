@@ -96,7 +96,7 @@ Koodin suoritusnopeuteen liittyy nykyjärjestelmissä myös monen suorittimen (t
 
 <!-- quiz 5.4 ????????????????? -->
 
-<div><quiz id="9ef6a20c-652d-43c3-b9ca-514a0a5194a1"></quiz></div>
-<div><quiz id="82210dd6-52d3-405f-8dc2-428b514a68f1"></quiz></div>
+<div><quiz id="191c81c9-2112-5d21-8744-c8b992ddabb1"></quiz></div>
+<div><quiz id="409715d4-ae57-5bd3-992c-30edb73ffc11"></quiz></div>
 
-<!-- div><quiz id="4b44871b-2fe7-4fe1-978c-267d5bf8de80"></quiz></div> -->
+<!-- div><quiz id="94a3f15a-fd2f-5007-af5b-858e9f2f7907"></quiz></div> -->

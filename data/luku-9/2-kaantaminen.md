@@ -220,9 +220,9 @@ Samoin pohditaan, minkälaisilla konekäskyillä jokin tietty koodinpätkä olis
 
 <!-- Quiz 9.2.?? -->
 
-<div><quiz id="b4d8f08c-9003-49e2-adc9-ef10190263cf"></quiz></div>
-<div><quiz id="ae13b1d5-8a9f-4623-9da6-e61cea2632bf"></quiz></div>
-<div><quiz id="ab644589-887b-4f7e-8a6d-e2903521693d"></quiz></div>
-<div><quiz id="aa5e02b7-87ab-41f4-92b7-e13586121b6c"></quiz></div>
-<div><quiz id="a97d1cdf-86f8-4079-8388-e00c3b0264fb"></quiz></div>
+<div><quiz id="1bc3d84c-c1a1-5835-a07a-f0381756bba1"></quiz></div>
+<div><quiz id="535f0a70-2686-5bdd-8c9a-241d4dfa08a8"></quiz></div>
+<div><quiz id="98c95e84-e850-5116-bc07-5a629dc8a0bc"></quiz></div>
+<div><quiz id="ace749e5-a20e-5fee-8b63-bd5a469909b5"></quiz></div>
+<div><quiz id="c8605b1f-8f17-573e-884b-ee5e6b22e810"></quiz></div>
 

@@ -199,7 +199,7 @@ Vaikka silmukat näyttävät kovin samanlaisilta, niissä on merkittävä semant
 
 <!-- quiz 5.2.?? ???? -->
 
-<div><quiz id="4ff4b9ca-32e3-4e45-80a5-28e31af2f6c7"></quiz></div>
-<div><quiz id="5b8e3913-3a45-4e95-b6a5-2ed19e75eb1a"></quiz></div>
-<div><quiz id="4aca88a5-2f9a-4589-a11d-263ef9a1e69b"></quiz></div>
-<div><quiz id="8c5c7cfb-5956-43c3-a229-47c6d1bd1c89"></quiz></div>
+<div><quiz id="93b2b40e-35bc-5560-a186-0fd849650b3c"></quiz></div>
+<div><quiz id="2aa12732-f5b2-5f8e-8136-07e2ee36797b"></quiz></div>
+<div><quiz id="31eeba76-4d99-5402-9aba-65fd0ef551d2"></quiz></div>
+<div><quiz id="17cb7c26-d844-506d-ac0e-6e56eb7d897c"></quiz></div>

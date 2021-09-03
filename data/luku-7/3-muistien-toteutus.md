@@ -48,8 +48,8 @@ Sittemmin flash-muistiteknologia kehitettiin tukemaan myös massamuistien toteut
 
 ## Quizit 7.3.1-2 
 <!-- Quiz 7.3.1-2 -->
-<div><quiz id="a611e851-843f-413e-8a50-db874b191da8"></quiz></div>
-<div><quiz id="a5618ecd-83b2-4a53-8a90-da9e2d133e53"></quiz></div>
+<div><quiz id="2263c2af-2aeb-553e-ad50-1f330df52437"></quiz></div>
+<div><quiz id="b2f4f7c2-2968-574c-a0af-5d313bfc4c73"></quiz></div>
 
 <text-box variant="example" name="Historiaa:  Ferriittirengasmuisti">
 
@@ -69,4 +69,4 @@ Tämä luku käsitteli aluksi tietokonejärjestelmän sisäisiä virheensyntymek
 
 Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
 
-<div><quiz id="a820d25a-85e2-4acc-b4c1-de3fd2b91a72"></quiz></div>
+<div><quiz id="bacfbe6e-9828-5e18-8e2b-bdebd1438095"></quiz></div>

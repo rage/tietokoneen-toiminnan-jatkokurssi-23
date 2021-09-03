@@ -215,9 +215,9 @@ wait load r1, Control    ; odota kunnes uusi pyyntö
 Todellisuudessa DMA-I/O:lla kerralla siirrettävä data on yleensä suuri. Esimerkiksi kerralla voisi siirtää koko 4 KB levylohkon. Jos kovalevyn laiteohjain toteutetaan DMA-I/O:lla keskeyttävän I/O:n asemesta, niin DMA-I/O tapahtuu nopeammin kahdesta syystä. Ensinnäkin, tuo 4 KB virtaa väylän läpi vain kerran. Toiseksi, yhdessä I/O tapahtumassa kerralla siirettävä datamäärä on DMA-I/O:ssa suurempi (esim. 4 KB) kuin keskeyttävässä I/O:ssa (esim. 256 B), joten laiteajurin tarvitsee puuttua harvemmin I/O:n johtamiseen. Älykkään DMA-laitteen DCP tekee pääosan työstä itsenäisesti. Jos siirrettävänä on vain yksi levylohko, niin DMA-laitteen laiteajuri aktivoituu vain kaksi kertaa. Ensin se pyytää DMA-laitetta siirtämään datan ja lopuksi se tarkistaa, että datasiirto on onnistunut.
 
 <!--  quizit 8.3.???  -->
-<div><quiz id="a5aab3ae-83ec-4e46-a3b5-dafedd922606"></quiz></div>
-<div><quiz id="a6471e8c-8469-473b-9e69-dbcda2612f6e"></quiz></div>
-<div><quiz id="aa38f3a3-878d-49c7-b93b-e104891a1971"></quiz></div>
+<div><quiz id="7eccc786-a277-562a-948b-78673fc92459"></quiz></div>
+<div><quiz id="b7983af2-1b41-5b3b-a01d-ec4affe11d92"></quiz></div>
+<div><quiz id="d46cbdbf-cbb6-5248-b7c1-1c18a1e85d72"></quiz></div>
 
 <text-box variant="example" name="Historiaa:  Transistori ja mikropiiri">
 Transistorin kehittivät W.B. Shockley, J. Bardeen ja W. Brattain Bell Labsin tutkimuskeskuksessa 1948. Se oli 1900-luvun tärkeimpiä teknisiä keksintöjä ja he saivat työstä Nobel-palkinnon vuonna 1956. J. Kilby ja R. Noyce kehittivät siitä integroidun piirin, jossa sekä transistorit että johtimet toteutettiin tasossa puolijohtimien avulla. Transistoreilla pystyttiin toteuttamaan sekä muisti että suorittimen logiikka. Kilbyn piiri oli ensimmäinen transistori (1958) ja hän sai siitä Nobel-palkinnon vuonna 2000. Noyce aloitti uransa Shockleyn yhtiössä ja oli perustamassa sekä Fairchild Semiconductor (1957) että Intel (1968) -yhtiöitä. Intel on edelleenkin maailman johtavia yrityksiä mikropiirien valmistamisessa. Ensimmäinen kaupallinen mikropiiri Intel 4004 julkistettiin 1971. Siinä oli 46 konekäskyä ja 16 kappaletta 4-bittisiä rekistereitä. Se oli suunniteltu japanilaisen Busicom-yhtiön tekemän laskimen toteutukseen.   
@@ -236,4 +236,4 @@ Tämä luvussa näytettiin ensin, kuinka virtuaalimuisti toimii ja kuinka se rat
 
 Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
 
-<div><quiz id="b203bc29-8dc2-41da-9ea6-eb51726af830"></quiz></div>
+<div><quiz id="12132a42-1ec9-5126-955b-37c448570697"></quiz></div>

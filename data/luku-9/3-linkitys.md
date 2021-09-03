@@ -46,7 +46,7 @@ Symbolien viittauskohdat on päivitetty linkitetyn moduulin uudelleensijoitustau
 
 ## Quizit 9.3 staattinen linkitys
 <!--  quizit 9.3.???  -->
-<div><quiz id="aec1b502-8b29-4f47-a0a8-e702f13cbda7"></quiz></div>
+<div><quiz id="3641d08e-75a2-5043-a35d-4c72f7b4a5d1"></quiz></div>
 
 ## Dynaaminen linkitys
 Useissa tapauksissa on järkevää tehdä linkitys dynaamisesti vasta suoritusaikana ([run-time dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker)). Oletetaan esimerkiksi, että edellisen esimerkin GameX kirjastomoduuli Math olisi dynaamisesti linkitettävä moduuli. Nyt latausmoduulista puuttuu moduuli Math ja rutiini Math.Aver on merkitty puuttuvaksi latausmoduulin IMPORT-hakemistoon. Rutiinin Math.Aver kutsukohtaan on jollain tavoin koodattu, että viite kohdistuu dynaamiseksi linkitettävään moduuliin. Koodaus voi olla esimerkiksi epäkelpo muistiosoite, jonka avulla käyttöjärjestelmälle annetaan suoritusvuoro tarpeen tullen.
@@ -71,4 +71,4 @@ Dynaamista linkitystä voidaan tehdä myös pelkästään latausaikana (load-tim
 Dynaaminen linkitys voidaan tehdä myös yhdistelemällä edellä esitettyjä menetelmiä. Tällöin jonkin prosessin dynaaminen linkitys latausaikana määritellyille moduuleille aloitetaan välittömästi, mutta prosessin suoritus voi alkaa samanaikaisesti. Kyseinen prosessi jää odottamaan dynaamisen linkityksen valmistumista vain silloin, jos se viittaa sellaiseen dynaamisesti linkitettävään moduuliin, jonka linkitys ei ole vielä valmistunut. Tällä tavoin menetellään esimerkiksi järjestelmän käynnistämisen yhteydessä, kun usea käyttöjärjestelmäprosessi pitää käynnistää ja niillä voi olla paljon latausaikana dynaamisesti linkitettäviä moduuleja. Näin käyttöjärjestelmä pysyy helposti ajan tasalla, mutta järjestelmä on käytettävissä silti nopeasti. Tosin alussa järjestelmä tuntuu vähän hitaalta, koska meneillään oleva dynaaminen linkitys vaatii paljon suoritinaikaa tai käyttäjä on viitannut vielä linkittämättömiin moduuleihin.
 
 <!--  quizit 9.3. dynamic linking  -->
-<div><quiz id="9565e624-76f8-4563-8f24-c57d65a09fca"></quiz></div>
+<div><quiz id="7221d3f7-979a-5ac6-a472-cd7ca762d01e"></quiz></div>

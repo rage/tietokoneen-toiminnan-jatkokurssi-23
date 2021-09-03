@@ -223,5 +223,5 @@ Lopulta exit-käsky (f12) palauttaa pinosta FP:n ja PC:n arvot ennalleen (ja SP:
 
 <!-- quiz 6.2.?? ???  -->
 
-<div><quiz id="4a42ed50-2f44-4090-951c-25f9a13cd1d6"></quiz></div>
-<div><quiz id="2d892009-1cfb-480b-8dc3-e8db1d66b13b"></quiz></div>
+<div><quiz id="c968fe4d-779a-5dc1-aab3-e143277b8328"></quiz></div>
+<div><quiz id="87a2ccf4-863c-5a30-ab34-301132b72757"></quiz></div>

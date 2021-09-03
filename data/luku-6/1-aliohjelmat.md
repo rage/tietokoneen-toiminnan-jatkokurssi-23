@@ -157,5 +157,5 @@ Seuraavassa osiossa näytämme tarkemmin, kuinka näiden käskyjen avulla aktiva
 
 <!-- quiz 6.1.? -->
 
-<div><quiz id="69f04e22-436d-479b-aa72-362c87170dea"></quiz></div>
-<div><quiz id="52f742b0-34ce-4520-8c80-2a6d22555fe9"></quiz></div>
+<div><quiz id="5cf85628-5597-5849-8248-395527668376"></quiz></div>
+<div><quiz id="6afaa525-e788-5809-a8b9-1f45ab12ba1a"></quiz></div>

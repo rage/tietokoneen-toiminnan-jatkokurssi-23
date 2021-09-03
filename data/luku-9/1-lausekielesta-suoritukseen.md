@@ -68,6 +68,6 @@ Prosessit tunnistetaan järjestelmässä niiden yksikäsitteisistä tunnuksista 
 
 ## Quizit 9.1  
 <!-- Quiz 9.1.?? -->
-<div><quiz id="9d362f0d-7d31-438f-b168-cfd194bb3719"></quiz></div>
-<div><quiz id="9a5e8c70-7aed-4c90-9148-cc0fb79adcf0"></quiz></div>
-<div><quiz id="aa632fda-87af-43e8-90c8-e13c5dc139ef"></quiz></div>
+<div><quiz id="ad4df0be-fbc5-57ef-b7a7-91201ed527e5"></quiz></div>
+<div><quiz id="f517bd16-c01a-5065-a3f2-c43fd96552b8"></quiz></div>
+<div><quiz id="beab340b-e3bb-5d02-986b-8109355902b7"></quiz></div>

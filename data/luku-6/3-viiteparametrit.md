@@ -120,8 +120,8 @@ Joissakin ohjelmointikielissä kaikki merkkijonot välitetään viiteparametrein
 
 <!-- quiz 6.3.??  ????? -->
 
-<div><quiz id="402508cf-28d3-4a03-ada1-20cd3c1c3342"></quiz></div>
-<div><quiz id="350b77c2-21c3-4080-81a7-1b20241e30d4"></quiz></div>
-<div><quiz id="36d816cb-22e8-434e-9749-1c0bb073a89e"></quiz></div>
-<div><quiz id="3b53a467-25c2-4995-a006-1e5683a49c62"></quiz></div>
-<div><quiz id="31e744d9-1fc3-42d3-9b3c-ff30f951fd4f"></quiz></div>
+<div><quiz id="1e816b18-c189-55ec-baab-49e0e66dee31"></quiz></div>
+<div><quiz id="3986dece-8f63-5815-83aa-5fad78943028"></quiz></div>
+<div><quiz id="fd4bac1a-a2b6-5efa-a88a-3f4842c04bc2"></quiz></div>
+<div><quiz id="4a952f12-1307-5ce0-9dc6-c54e7f250d35"></quiz></div>
+<div><quiz id="d67d000b-9a64-5263-a1a1-1ecb836d43c4"></quiz></div>

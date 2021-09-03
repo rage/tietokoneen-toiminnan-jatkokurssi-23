@@ -102,7 +102,7 @@ Pilvitallennus on osa laajempaa pilvipalvelua, jossa asiakkaat voivat ostaa/vuok
 
 ### Quiz 8.2.1 Sektorin ja levylohkon saantiajat
 
-<div><quiz id="ad4ba2d8-8a00-4123-90f8-e51474de1b76"></quiz></div>
-<div><quiz id="b3fb891d-8f53-44ea-85df-edeb6c3e7f87"></quiz></div>
-<div><quiz id="afc11b28-8bf5-4563-a6c9-e8548e2669e7"></quiz></div>
+<div><quiz id="f47b36aa-180a-58b7-a5d8-a9e5ed12498b"></quiz></div>
+<div><quiz id="aaaa40ca-2f1d-5b80-8c95-3327340a2cb2"></quiz></div>
+<div><quiz id="3b6625d2-9c54-50eb-bb87-c244359db235"></quiz></div>
 

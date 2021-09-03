@@ -33,7 +33,7 @@ Intelin ratkaisu x86-koodin nopeaan suorittamisen [Pentium 4](https://en.wikiped
 Suorittimen sisällä varsinainen konekäskyjen suoritus perustui noihin mikrokäskyihin, joita oli helpompi suorittaa useaa limittäin ja samanaikaisesti. Tavallaan Pentium 4 siis emuloi x86-arkkitehtuuria puhtaalla laitteistoteutuksella.
 
 <!--  quizit 10.4  suorittimen emulointi  -->
-<div><quiz id="ab83596c-8894-4b77-a550-e2b94a126ac9"></quiz></div>
+<div><quiz id="8e0e73e8-c0e5-5120-81aa-717502e7be61"></quiz></div>
 
 <text-box variant="example" name="Nykyaikaa: Intel Core i9-9900K (2018)">
 
@@ -67,5 +67,5 @@ Vastaa vielä alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien ka
 
 <!-- summary quizit   -->
 
-<div><quiz id="a6120f2c-843f-432d-8598-db877e7a6fda"></quiz></div>
+<div><quiz id="96c1ef93-1f6b-5cf3-972b-49034b8cf919"></quiz></div>
 

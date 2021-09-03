@@ -322,6 +322,6 @@ Tavun 105 käsky _dup_ käyttö on jo vähän koodin optimointia. Lisäoptimoinn
 
 <!-- Quizit 9.2.  JVM -->
 
-<div><quiz id="a6535db1-8473-4344-921d-dbddd2bc77d8"></quiz></div>
-<div><quiz id="b0a217ca-8ca8-4801-bc1c-e97df76110e8"></quiz></div>
-<div><quiz id="a8f03453-8687-4d1e-9036-df51f690f488"></quiz></div>
+<div><quiz id="c56b3218-6453-5113-9b5c-63752717e995"></quiz></div>
+<div><quiz id="f4874ff9-fedc-5c5c-aff7-2c3014100229"></quiz></div>
+<div><quiz id="aeb0a4da-0d88-56dd-be7b-9605319a95ad"></quiz></div>

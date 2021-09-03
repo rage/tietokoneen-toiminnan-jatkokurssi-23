@@ -36,7 +36,7 @@ Nyt prosessi on valmis ja järjestelmä tunnistaa sen uniikista PID:stä. Jos pr
 Prosessin kuvaajan tietoja ja prosessien hallintaa yleensä käsitellään tarkemmin yliopistojen käyttöjärjestelmäkursseilla.
 
 <!--  quizit 9.4.???  -->
-<div><quiz id="98478074-7943-4b62-a2f3-c94c6fd5b260"></quiz></div>
+<div><quiz id="54c84cd7-90bd-5331-904a-09845efb42c3"></quiz></div>
 
 <text-box variant="example" name="Historiaa: Ensimmäinen korkean tason kielen kääntäjä">
 Ensimmäinen korkean tason kielen kääntäjä valmistui 1957 IBM:llä John Backuksen ryhmässä Fortran-kielelle IBM 704 -järjestelmälle. Fortrania on koko ajan kehitetty ajan mukaiseksi ja sitä voi nykyään käyttää niin lohkoperustaiseen ohjelmointiin kuin rinnakkaislaskentaa vaativiin tehtäviin. Ensimmäisen kääntäjän tekeminen kesti neljä vuotta. Kääntäjällä pystyi alusta pitäen tuottamaan optimoitua koodia, koska asiakkaat olivat tottuneet assemblerilla käsin koodattuun hyvin optimoituun koodiin.
@@ -57,5 +57,5 @@ Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
 
 <!-- ### summary quizit lukuun 9 ??? -->
 
-<div><quiz id="9dadff01-7d90-4a1f-b3cc-d06ff6151d0a"></quiz></div>
+<div><quiz id="189ca62e-97c8-567e-bb9e-bd69b4c5b864"></quiz></div>
 
