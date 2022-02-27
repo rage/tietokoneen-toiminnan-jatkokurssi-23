@@ -23,8 +23,12 @@ Sähköpostiosoitteet ovat muotoa etunimi.sukunimi@helsinki.fi.
 
 Tehtyäsi 20 pisteen verran kurssin mooc-ympäristössä tehtäviä, saat sähköpostiisi ilmoittautumislinkin, jolla pääset kurssin Moodle-alueelle. Jos mielestäsi sähköpostin olisi pitänyt jo saapua, tarkista roskapostikansio. Jos sinulla on kysyttävää ennen Moodleen pääsemistä, suositeltu yhteydenottotapa on sähköposti. Huomaa kuitenkin, että yliopiston roskapostisuodatus on varsin vahva, joten viestiä ei välttämättä huomata heti. Kun olet päässyt Moodle-alueelle, suositeltu yhteydenottotapa on Moodlen pikaviestit. Jos kysymyksesi on sellainen, että voit kysyä sitä kurssin julkisella [keskustelukanavalla Telegramissa](https://t.me/tkt_tito), saatat saada vastauksen nopeammin kurssikavereilta tai opettajilta. Älä kuitenkaan lähetä yksityisviestejä Telegramissa opettajille.
 
+## Kurssin arvostelu
+Kurssin arvostelusta tarkemmin kohdassa [Arvostelu ja kokeet](arvostelu-ja-kokeet).
+
+
 ## Kurssin aikataulut
-Tässä on listattuna kurssin aikataulu koekohtaisesti. Huomatkaa, että kokeen perusteella tehdyssä arvostelussa huomioidaan vain ennen koetta tehdyt tehtävät. Määräajat ovat ehdottomia. Huolehdi siis itse, että olet esimerkiksi tallentanut vastauksesi oikeaan kohtaan ja tehnyt itse- ja vertaisarvioinnit ajoissa.
+Tässä on listattuna kurssin aikataulu koekohtaisesti. Huomatkaa, että kokeen perusteella tehdyssä arvostelussa huomioidaan vain ennen koetta tehdyt tehtävät. Määräajat ovat ehdottomia. Huolehdi siis itse, että olet esimerkiksi tallentanut vastauksesi oikeaan kohtaan ja tehnyt itse- ja vertaisarvioinnit ajoissa. Kurssikokeen suoritusaika on 2,5 tuntia kokeen aloittamisesta, päättyen kuitenkin viimeistään 19.00.
 
 #### Määräajat ennen 26.4.2022 koetta:
 - PE 15.4. kello 23.59 Selitystehtävien palautus Moodleen (tämä on pyhäpäivä, mutta saa palauttaa jo aiemmin)
@@ -65,18 +69,18 @@ Kurssin pääasiallinen oppimateriaali on tällä verkkosivustolla. Koe, ohjeet 
 Tehtyäsi vähintään 20 pisteen verran mooc-pikatehtäviä, saat sähköpostiisi ilmoittautumislinkin. Ilmoittauduttuasi pääset jatkamaan opiskelua Moodle-oppimisympäristössä.
 
 ## Kurssin käyttötavat
-Kurssia voidaan käyttää useaan alla mainittuun eri tarkoitukseen. Erilaisten kurssisuoritusten arvostelumenetelmät Helsingin yliopiston kurssina selitetään tarkemmin osiossa "Arvostelu ja kokeet".
+Kurssia voidaan käyttää useaan alla mainittuun eri tarkoitukseen.
 
 ### Avoimen yliopiston kurssina
-Kurssin suorittamisesta Helsingin yliopiston Avoimen yliopiston kurssina löydät lisätietoja kohdasta "Arvostelu ja kokeet".
+Kurssin suorittamisesta Helsingin yliopiston Avoimen yliopiston kurssina löydät lisätietoja kohdasta [Arvostelu ja kokeet](arvostelu-ja-kokeet).
 
-### Helsingin yliopiston kurssina
-Tietokoneen toiminnan jatkokurssi (3 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita. Kurssia Tietokoneen toiminnan jatkokurssi (3 op, MOOC) ei voi Helsingin yliopistossa suorittaa irrallisena kurssina.
+### Helsingin yliopiston tutkinto-opiskelijoiden kurssin oppimateriaalina
+Tätä mooc-materiaalia käytetään myös osana tutkinto-opiskelijoiden Tietokoneen toiminta (5 op) kurssia. Tutkinto-opiskelijat voivat kuitenkin osallistua Avoimen yliopiston kurssille niin halutessaan. Tietokoneen toiminnan perusteet MOOC-kurssi ja tämä Tietokoneen toiminnan jatkokurssi vastaavat yhdessä Tietokoneen toiminnan -kurssin suorittamista.
 
 ### Omaehtoinen itsenäinen opiskelu
-Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluuun. Käy läpi kurssimateriaali, surfaile haluamiasi lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
+Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluuun. Käy läpi kurssimateriaali, hae haluamiasi lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
 
-### Lukion tai muun keskiasteen valinnaisena kurssina
+### Lukion tai muun keskiasteen valinnaisen kurssin oppimateriaalina
 Kukin oppilaitos voi itse määritellä, millä tavoin tämän Tietokoneen toiminnan jatkokurssi (3 op, [MOOC](https://mooc.fi/)) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
 
 
