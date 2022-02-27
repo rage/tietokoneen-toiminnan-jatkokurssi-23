@@ -59,14 +59,6 @@ Ohjelmointi on hauskaa ja siten myös konekielinen ohjelmointi. Älä kuitenkaan
 Perustavoitteet symbolisella konekielellä ohjelmoinnille tällä kurssilla ovat seuraavat. Osaat toteuttaa symbolisella ttk-91 konekielellä erilaisten tietorakenteiden (muuttujat, 1- ja 2-ulotteiset taulukot, tietueet) muistivaraukset ja niihin viittaamiset. Osaat käyttää tietorakenteita myös osoitinmuuttujien avulla. Osaat toteuttaa koodissa haarautumiset ja erilaiset toistolauseet. Osaat käyttää (seuraavassa luvussa esiteltäviä) aliohjelmia ja funktioita sekä toteuttaa ne. Osaat selittää, mikä on aktivointitietue ja aktivointitietuepino. Osaat käyttää arvo- ja viiteparametreja. Osaat varata globaaleja tietorakenteita ja aliohjelmien paikallisia tietorakenteita. Osaat viitata aliohjelmissa parametreihin sekä globaaleihin ja paikallisiin tietorakenteisiin.
 
 
-<!-- quiz 5.5.??? ????????????????? -->
-
-<div><quiz id="a3a82631-4b45-5463-bce0-71eed295f375"></quiz></div>
-<div><quiz id="9370e097-fa93-5af4-aee6-bc509adb0b6d"></quiz></div>
-<div><quiz id="b9342ae7-e7ae-5c5b-8253-c01ee087e4f3"></quiz></div>
-<div><quiz id="1f010207-0b1e-5fd3-864b-aa0b490c85d0"></quiz></div>
-<div><quiz id="79ec770f-447d-52ca-b35a-a350564ba797"></quiz></div>
-<div><quiz id="62afcbc2-5d7e-591a-90f8-3b0d1bf30a40"></quiz></div>
 
 <text-box variant="example" name="Historiaa:  Akustinen viiveputki">
 

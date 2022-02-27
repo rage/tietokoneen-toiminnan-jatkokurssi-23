@@ -17,7 +17,7 @@ Optimoinnin vaatiman käännösajan vuoksi useissa suurissa ohjelmistoprojekteis
 ## Optimoidun koodin toteutus
 Koodin optimointia tehdään usealla eri tasolla. Tavoite koodin optimoinnilla on aina tuottaa koodia, jonka suoritusaika olisi mahdollisimman pieni. Tämän takia yleensä pyritään suorittamaan mahdollisimman vähän konekäskyjä ja mahdollisimman vähän muistiviitteitä. Viimeksi mainittuun tavoitteeseen sisältyy sellainen koodi, joka ottaa täyden hyödyn irti välimuistista.
 
-Joissakin tapauksissa koodin suoritusajan optimoinnissa otetaan huomioon myös generoidun koodin koko, koska joissakin tapauksissa tehokas suoritusaikaan kohdistuva optimointi voi kasvattaa koodin kokoa huomattavasti. Optimointi voidaan tällöin tehdä niin, että koodin koko ei saa kasvaa "liikaa". Toisaalta taas joihinkin pieniin laitteisiin optimointi voidaan toteuttaa siten, että tarkoituksena onkin vain mahdollisimman pieni koodin koko ja suoritusaika ei ole niin tärkeä. Emme käsittele näitä tapauksia tällä kurssilla sen enempää. 
+Joissakin tapauksissa koodin suoritusajan optimoinnissa otetaan huomioon myös generoidun koodin koko, koska joissakin tapauksissa tehokas suoritusaikaan kohdistuva optimointi voi kasvattaa koodin kokoa huomattavasti. Optimointi voidaan tällöin tehdä niin, että koodin koko ei saa kasvaa "liikaa". Toisaalta taas joihinkin pieniin laitteisiin optimointi voidaan toteuttaa siten, että tarkoituksena onkin vain mahdollisimman pieni koodin koko ja suoritusaika ei ole niin tärkeä. Emme käsittele näitä tapauksia tällä kurssilla sen enempää.
 
 [Rekistereiden allokointi](https://en.wikipedia.org/wiki/Register_allocation) on yksi tärkeimmistä (suoritusajan) optimoinnin osa-alueista. Rekistereiden allokoinnissa päätetään, mihin tarkoitukseen kutakin rekisteriä käytetään milloinkin ohjelman suoritusaikana. Säilytetäänkö esimerkiksi muuttujan X arvoa tietyssä vaiheessa (esimerkiksi silmukan sisällä) vaikkapa rekisterissä r3, vai ainoastaan muistissa? Silmukan muuntelumuuttujan arvo olisi usein kätevää pitää rekisterissä, mutta onko nyt juuri vapaata rekisteriä sitä varten? Allokointiongelman ydin on siinä, että rekistereitä on vähän ja viitattavaa dataa paljon. Kaikki laskentatyö pitää kuitenkin tehdä rekistereiden avulla.
 
@@ -33,7 +33,7 @@ for (i=0 to 99999) {
 
 taulukkoviite T[i] on turvallinen, jos taulukon T koko on ainakin 100000 ja i:n arvoa ei muuteta muualla silmukassa. Tämän päättelyn tekeminen algoritmisesti on kuitenkin yleisessä tapauksessa vaikeaa. Silmukka voi olla koodimäärältään hyvinkin suuri, siinä voi olla viittauksia muualle koodiin ja viitattavan taulukon koko voi olla vaikea päätellä.
 
-Tarkastellaan yksinkertaista taulukon alustussilmukkaa esimerkkinä optimoinnin toteutuksesta. 
+Tarkastellaan yksinkertaista taulukon alustussilmukkaa esimerkkinä optimoinnin toteutuksesta.
 
 ```
 for (i=0 to 499)
@@ -94,9 +94,3 @@ Optimoinnilla voidaan siis saavuttaa huomattava nopeushyöty. Joissakin sovelluk
 
 Koodin suoritusnopeuteen liittyy nykyjärjestelmissä myös monen suorittimen (tai "ytimen") käyttö yhden ohjelman suoritukseen. Emme käsittele näitä moniprosessorijärjestelmiä tai niiden ohjelmointia tällä kurssilla lainkaan.
 
-<!-- quiz 5.4 ????????????????? -->
-
-<div><quiz id="191c81c9-2112-5d21-8744-c8b992ddabb1"></quiz></div>
-<div><quiz id="409715d4-ae57-5bd3-992c-30edb73ffc11"></quiz></div>
-
-<!-- div><quiz id="94a3f15a-fd2f-5007-af5b-858e9f2f7907"></quiz></div> -->

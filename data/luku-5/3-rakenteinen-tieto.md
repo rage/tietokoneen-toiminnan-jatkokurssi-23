@@ -121,7 +121,7 @@ ja tasolla 1 alkiot
 110 111 112 113
 120 121 122 123
 ```
-Alkioiden arvot on tässä esimerkissä valittu tahallaan siten, että arvot vastaavat alkioiden indeksejä taulukossa S. Esimerkiksi alkion S[1,2,1] arvo on 121. Huomaa, että taulukkoon viitattaessa kunkin indeksin täytyy olla omalla nollasta alkavalla arvoalueellaan, mikä on kullekin indeksille annettu taulukon määrittelyvaiheessa. 
+Alkioiden arvot on tässä esimerkissä valittu tahallaan siten, että arvot vastaavat alkioiden indeksejä taulukossa S. Esimerkiksi alkion S[1,2,1] arvo on 121. Huomaa, että taulukkoon viitattaessa kunkin indeksin täytyy olla omalla nollasta alkavalla arvoalueellaan, mikä on kullekin indeksille annettu taulukon määrittelyvaiheessa.
 
 Jos S on talletettu "riveittäin", niin alkiot ovat muistissa riveittäin taso kerrallaan järjestyksessä
 
@@ -136,15 +136,15 @@ ja niihin voisi viitata esimerkiksi seuraavalla tavalla.
      ; laske tason i (suhteellinen) osoite (taulukossa S)
      load r1, i
      mul r1, =12   ; joka tasossa 12 sanaa
-     
+
      ; laske rivin j osoite tasolla i
      load r2, j
      mul r2, =4    ; joka rivillä 4 sanaa
      add r1, r2
-     
+
      ; laske alkion k osoite rivillä j tasolla i
      add r1, k
-     
+
      ; tee varsinainen muistiviite
      load r2, S(r1)  ; lataa r2:een alkion S[i,j,k] arvo
 ```
@@ -208,18 +208,18 @@ Esimerkiksi, jos R[20,30] on riveittäin talletettu 2-ulotteinen taulukko, jonka
      ; rivin i osoite R:ssä
      load r1, i
      mul  r1, =420   ; rivillä 30 tietuetta, kussakin 14 sanaa
-     
+
      ; alkion j osoite rivillä i
      load r2, j
      mul r2, 14      ; kussakin alkiossa 14 sanaa
      add r1, r2      ; alkion R[i,j] suhteellinen osoite R:n sisällä
-     
+
      ; kentän pisteet osoite alkiossa R[i,j]
      add r1, =2      ; taulukon R[i,j] kentän pisteet suhteellinen osoite
-     
+
      ; alkion kk osoite taulukossa pisteet
      add r1, kk      ; alkion R[i,j].pisteet[kk] suhteellinen osoite
-     
+
      ; tee muistiviite
      load r2, R(r1)  ; lataa r2:een alkion R[i,j].pisteet[kk] arvo
 ```
@@ -264,8 +264,4 @@ jatka nop
 
 Kuten tästä esimerkistä huomataan, tarkistusten hinta voi olla korkea suoritusnopeuden hidastuessa ylimääräisten suoritettavien konekäskyjen vuoksi. Toisaalta, haavoittuvaan järjestelmään kohdistuneen puskurin ylivuotohyökkäyksen kustannukset voivat olla valtaisat. On myös muita tapoja tehdä ja välttää indeksitarkistuksia sekä torjua puskurin ylivuotohyökkäyksiä, mutta ne eivät sisälly tämän kurssin oppimistavoitteisiin.
 
-<!-- quizes 5.3 rakenteinen tieto -->
 
-<div><quiz id="1cfbf833-b009-52bd-8760-dbdf8622fb20"></quiz></div>
-
-<div><quiz id="81a34ecf-15de-5a72-9336-080fa12d2c4e"></quiz></div>

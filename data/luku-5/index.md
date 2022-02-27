@@ -12,7 +12,7 @@ Seuraavassa luvussa 6 esittelemme, kuinka aliohjelmat (metodit) toteutetaan kone
 
 <pages-in-this-section></pages-in-this-section>
 
-Yllä oleva sisällysluettelo sisältää kurssin ensimmäisen luvun 5 aihealueet.
+Yllä oleva sisällysluettelo sisältää kurssin ensimmäisen luvun 5 aihealueet. Huomaa, että kyseisen sisällysluettelon numerointi on teknisestä rajoitteesta johtuen yhden edellä, koska alkuun on laitettu Perusteet-kurssin kertausta varten yksi aliluku. Eli esimerkiksi Esimerkkitietokone ttk-91 on aliluku 1.
 
 Tämän Tietokoneen toiminnan jatkokurssin luvut on numeroitu 5-10, koska ne ovat suoraan jatkumoa kurssin Tietokoneen toiminta luvuille 1-4.
 

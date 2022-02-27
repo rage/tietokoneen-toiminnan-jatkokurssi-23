@@ -43,7 +43,7 @@ Konekielessä valintalauseet toteutetaan yksinkertaisesti ehdollisilla hyppykäs
 
 ```
       load r1, X
-      jnzer r1, xnzer       ; jos r1 != 0, hyppää kohtaan xnzer 
+      jnzer r1, xnzer       ; jos r1 != 0, hyppää kohtaan xnzer
       ...                   ; then-haara
       jump done
 xnzer ...                   ; else-haara
@@ -197,9 +197,4 @@ loop  load r2, r1       ; silmukan runko
 
 Vaikka silmukat näyttävät kovin samanlaisilta, niissä on merkittävä semanttinen ero. Ei ole ollenkaan yhdentekevää, testataanko silmukan lopetusehto ennen ensimmäistä silmukan rungon suorituskertaa vai ei.
 
-<!-- quiz 5.2.?? ???? -->
 
-<div><quiz id="93b2b40e-35bc-5560-a186-0fd849650b3c"></quiz></div>
-<div><quiz id="2aa12732-f5b2-5f8e-8136-07e2ee36797b"></quiz></div>
-<div><quiz id="31eeba76-4d99-5402-9aba-65fd0ef551d2"></quiz></div>
-<div><quiz id="17cb7c26-d844-506d-ac0e-6e56eb7d897c"></quiz></div>

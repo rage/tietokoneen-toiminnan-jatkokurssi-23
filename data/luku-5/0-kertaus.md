@@ -7,7 +7,7 @@ hidden: false
 
 <div>
 <lead>
-Tässä osiossa kerrataan ja syvennetään Tietokoneen toiminnan perusteet -kurssilla opittuja asioita. Jokainen kertausosion tehtävistä on sellainen, että voit yrittää vastaamista niin monta kertaa kuin tarvitset, kunnes vastaus on oikein. Jos tehtävässä on useampi vastauskenttä, on jokaiseen annettava vastaus ennen kuin voi painaa Vastaa-nappia. Kun olet tehnyt tämän osion tehtävistä 90 %, saat sähköpostiisi ilmoittautumislinkin Tietokoneen toiminnan jatkokurssille. Ilmoittauduttuasi pääset kurssin Moodle-oppimisympäristöön, jossa on tiedot kurssin muista tehtävistä ja kokeesta.
+Tässä osiossa kerrataan hieman Tietokoneen toiminnan perusteet -kurssilla opittuja asioita. Jokainen kertausosion tehtävistä on sellainen, että voit yrittää vastaamista niin monta kertaa kuin tarvitset, kunnes vastaus on oikein. Jos tehtävässä on useampi vastauskenttä, on jokaiseen annettava vastaus ennen kuin voi painaa Vastaa-nappia. Näet tehtävästä saadut osapisteet myös osittain oikeista vastauksista, mutta vasta kokonaan vastattuasi näet mitkä olivat oikein. Kun olet saanut hankittua vähintään 20 pistettä tehtävistä, saat sähköpostiisi ilmoittautumislinkin Tietokoneen toiminnan jatkokurssille. Ilmoittauduttuasi pääset kurssin Moodle-oppimisympäristöön, jossa on tiedot kurssin muista tehtävistä ja kokeesta.
 </lead>
 </div>
 
@@ -22,11 +22,11 @@ Lisätietoja lukujärjestelmistä löydät Tietokoneen toiminnan perusteet -kurs
 
 ### Kymmenjärjestelmä ja binäärijärjestelmä
 
-Kymmenjärjestelmän luvut ovat 10-kantaisia lukuja ja binääriluvut 2-kantaisia lukuja. Heksadesimaaliluvut puolestaan ovat 16-kantaisia lukuja. Kymmenjärjestelmässä numeron paikka ilmaisee, montako mitäkin kymmenen potenssia (ykköset, kymmenet, sadat jne.) tarvitaan luvun ilmaisemiseen. Esimerkiksi 
+Kymmenjärjestelmän luvut ovat 10-kantaisia lukuja ja binääriluvut 2-kantaisia lukuja. Heksadesimaaliluvut puolestaan ovat 16-kantaisia lukuja. Kymmenjärjestelmässä numeron paikka ilmaisee, montako mitäkin kymmenen potenssia (ykköset, kymmenet, sadat jne.) tarvitaan luvun ilmaisemiseen. Esimerkiksi
 
 <p>2735 = 2&#8901;1000 + 7&#8901;100 + 3&#8901;10 + 5&#8901;1</p>
 
-Binäärijärjestelmässä eli 2-kantajärjestelmässä vastaavasti numeron paikka ilmaisee, montako mitäkin kahden potenssia (ykköset, kakkoset, neljät, kahdeksat jne.) tarvitaan luvun ilmaisemiseen. Esimerkiksi 
+Binäärijärjestelmässä eli 2-kantajärjestelmässä vastaavasti numeron paikka ilmaisee, montako mitäkin kahden potenssia (ykköset, kakkoset, neljät, kahdeksat jne.) tarvitaan luvun ilmaisemiseen. Esimerkiksi
 
 <p>0b1001 = 1&#8901;8 + 0&#8901;4 + 0&#8901;2 + 1&#8901;1 = 9</p>
 
@@ -45,7 +45,7 @@ Quiz binääriluvut 1
 -->
 
 <div><quiz id="17c1e89b-8f4f-434b-9dba-d85a04e668c9"></quiz></div>
-<!-- 
+<!--
 Quiz binääriluvut 2
 -->
 <div><quiz id="a2a0ee7a-095f-4387-b428-7d21ebf3251c"></quiz></div>
@@ -77,8 +77,8 @@ Koska 16-kantaisessa järjestelmässä tarvitaan 16 numeroa, on käytössä kirj
 
 Esimerkiksi heksadesimaaliluku 0x1AB muunnetaan kymmenjärjestelmään seuraavasti:
 
-0x1AB = 1&#8901;256 + A&#8901;16 + B&#8901;1 
-= 1&#8901;256 + 10&#8901;16 + 11 
+0x1AB = 1&#8901;256 + A&#8901;16 + B&#8901;1
+= 1&#8901;256 + 10&#8901;16 + 11
 = 256 + 160 + 11
 = 427
 
@@ -108,6 +108,15 @@ Niinpä 0xCAFE = 0b 1100 1010 1111 1110.
 
 
 <div><quiz id="a1c638cf-a60a-4c75-b190-58e37ac740b6"></quiz></div>
+
+<div><quiz id="e118f74c-6a8c-48e6-8f1a-e695e0f1ccea"></quiz></div>
+
+<div><quiz id="66be783b-a5b9-4121-ba7c-33661ffda408"></quiz></div>
+
+<div><quiz id="95d23e3f-a4fd-4457-a3e4-31ced6c9e6d7"></quiz></div>
+
+
+
 
 
 
