@@ -25,7 +25,7 @@ y     dc 7             -->     1:                        7
       ...
 aver  pushr sp         -->    77:          53  6  0 0    0 *
       ...
-   
+
       svc  sp, =halt   -->   323:          112 6  0 0   11
 ```
 
@@ -37,7 +37,7 @@ Lisäksi uudelleensijoitustaulussa on vielä _EXPORT_-osio (export-taulu), jossa
 
 ### Symbolitaulu
 
-Symbolitaulussa on siis kaikki ohjelman käyttämät symbolit ja niiden arvot. Joidenkin symbolien arvot annetaan, joidenkin arvot päätellään käännösmoduulista käännösvaiheessa, joidenkin arvot selviävät linkitysvaiheessa ja joidenkin vasta suoritusaikana. 
+Symbolitaulussa on siis kaikki ohjelman käyttämät symbolit ja niiden arvot. Joidenkin symbolien arvot annetaan, joidenkin arvot päätellään käännösmoduulista käännösvaiheessa, joidenkin arvot selviävät linkitysvaiheessa ja joidenkin vasta suoritusaikana.
 
 Kussakin (korkean tason ja symbolisen konekielen) ohjelmointikielessä on  merkittävä joukko etukäteen määriteltyjä symboleja, joiden arvot löytyvät myös symbolitaulusta. Tällaisia ovat esimerkiksi symbolisen konekielen operaatiokoodien nimet (add, comp, jump, etc), laiterekisterien nimet (r0, r4, sp, etc), laitteiden nimet (crt, kbd, etc) ja käyttöjärjestelmäpalvelujen nimet (halt, time, etc).
 
@@ -59,7 +59,7 @@ load r2, "mystring" -->  Lmystring ds "mystring" ; ei ttk-92:ssä
 load r1, =800000    -->  L800000 dc 800000
                                  load r1, L800000   ; viittaus muistiin, ei käskyn vakio-osaan
 ```
-Literaalia ei saisi välittää viiteparametrina, koska tällöin kutsuttu rutiini voisi (vahingossa) muuttaa sen arvoa. Useissa kielissä esimerkiksi kaikki merkkijonot välitetään joka tapauksessa viiteparametreina. Arvon muutoksen voi kuitenkin estää, jos literaalit on talletettu suojatulle literaalialueelle. 
+Literaalia ei saisi välittää viiteparametrina, koska tällöin kutsuttu rutiini voisi (vahingossa) muuttaa sen arvoa. Useissa kielissä esimerkiksi kaikki merkkijonot välitetään joka tapauksessa viiteparametreina. Arvon muutoksen voi kuitenkin estää, jos literaalit on talletettu suojatulle literaalialueelle.
 
 Joissakin kielissä kaikki koodissa olevat vakiot ovat literaaleja. Tämä tekee vakioiden käsittelystä linjakasta, mutta toisaalta pienten vakioiden talletus literaalialueelle hidastaa suoritusta verrattuna tilanteeseen, jossa ne talletettaisiin käskyjen vakiokenttiin.
 
@@ -81,7 +81,7 @@ Ohjelmointikuri on selvästi pettänyt ja vakion L6 arvo on nyt 5, mistä seurai
 ### Makrot
 Useissa korkean tason kielissä ja symbolisissa konekielissä on mahdollisuus käyttää _makroja_. Makrot ovat usein toistettavia koodisarjoja ja niiden käyttö helpottaa ohjelmointia. Niissä voi olla parametreja, minkä vuoksi ne voi joskus sekoittaa aliohjelmiin vaikka ne ovat täysin erilaisia.
 
-Makrot käsitellään ennen kääntämistä. Ennen varsinaista käännöstä koko ohjelmakoodi käydään läpi ja kukin makro _laajennetaan_ tekstuaalisesti sitä vastaavaksi koodinpätkäksi. Tämän vuoksi makroissa voi käyttää ainoastaan _nimiparametreja_, koska arvo- ja viiteparametrit ovat käsitteinä olemassa ainoastaan suoritusaikana. 
+Makrot käsitellään ennen kääntämistä. Ennen varsinaista käännöstä koko ohjelmakoodi käydään läpi ja kukin makro _laajennetaan_ tekstuaalisesti sitä vastaavaksi koodinpätkäksi. Tämän vuoksi makroissa voi käyttää ainoastaan _nimiparametreja_, koska arvo- ja viiteparametrit ovat käsitteinä olemassa ainoastaan suoritusaikana.
 
 Kukin makro pitää määritellä ennen sen käyttöä. Esimerkiksi, luvussa 6 esitelty makro Swap määritellään seuraavanalaisesti.
 
@@ -100,13 +100,13 @@ x = tbl[y];
 tbl[y] = tmp;
 ```
 
-mikä toimii suoritusaikana aivan oikein, vaihtaen muuttujan X ja taulukon alkion tbl[y] arvot keskenään. 
+mikä toimii suoritusaikana aivan oikein, vaihtaen muuttujan X ja taulukon alkion tbl[y] arvot keskenään.
 
-Symbolisissa konekielissä on tyypillistä käyttää makroja esimerkiksi aliohjelmien prologien ja preludien toteutukseen. Esimerkiksi Luvussa 6 esitetyn funktion fA(x,y) preludin voisi toteuttaa makrolla 
+Symbolisissa konekielissä on tyypillistä käyttää makroja esimerkiksi aliohjelmien prologien ja preludien toteutukseen. Esimerkiksi Luvussa 6 esitetyn funktion fA(x,y) preludin voisi toteuttaa makrolla
 
 ```
 -- funktion prelude, 2 parametria, 1 paikallinen muuttuja
-macro Prelude-f-2-1 (fnimi, ret, par1, par2, loc1, loc1val)  
+macro Prelude-f-2-1 (fnimi, ret, par1, par2, loc1, loc1val)
 ret equ -4
 par1 equ -3
 par2 equ -2
@@ -122,31 +122,31 @@ Nyt funktion fa() koodi olisi
 
 ```
     Prelude-f-2-1 (fa, retfA, parX, parY, locZ, 5)
-    
+
     ...                -- funktion varsinainen koodi
-    
-f10 Epilog-f-2-1 ()  -- 2 parametria, 1 paik. muuttuja 
+
+f10 Epilog-f-2-1 ()  -- 2 parametria, 1 paik. muuttuja
 ```
 
-Makron _Epilog-f-2-1()_ määrittely jätetään harjoitustehtäväksi. 
+Makron _Epilog-f-2-1()_ määrittely jätetään harjoitustehtäväksi.
 
 Tässä esimerkissä makro Prelude-f-2-1() on vähän kompelö, koska sen käyttö sopii vain funktioille, joilla on kaksi parametria ja yksi paikallinen muuttuja. Hyvä ohjelmoija kirjoittaisi käyttökelpoisempia makroja, jos vain käytettävissä oleva makrojen määrittelykieli sen sallisi.
 
 Makroilla on muutama tärkeä ominaisuus verrattuna aliohjelmiin. Mainitsimmekin jo, että makrot siis lajennetaan koodiksi ennen käännöstä, kun taas aliohjelmia kutsutaan suoritusaikana. Koska jokainen makron käyttökerta laajenee aina koodiksi, niin 100 kappaletta 50-rivisen makron käyttökertaa laajenee 5000 riviksi koodia. Jos 50-rivistä aliohjelmaa kutsutaan 100 kertaa, niin koodin määrä on vain yhden aliohjelman toteutuksen n. 60 riviä. Lisäksi jokaisen kutsukerran toteutus on ehkä 10 riviä, joten yhteistarve on noin 60+100\*10&nbsp;=&nbsp;1060 riviä koodia. Toisaalta makrosta generoitu koodi on paikallaan sellaisenaan, eikä vaadi kontrollin siirtoa suoritusaikana. Aliohjelman yhteydessä jokainen kontrollin siirto vaatii esim. 10-15 konekäskyn suorituksen aktivaatiotietuetta rakennettaessa tai purettaessa.
 
-Makrojen merkittävä ero aliohjelmiin on, että makroilla ei ole omaa viiteympäristöä, koska makrot laajennetaan sellaisenaan käyttökohtiinsa. Aliohjelmilla voidaan toteuttaa korkean tason kielten erilaiset viiteympäristöt. Esimerkiksi C-kielessä kussakin aliohjelmassa voi viitata sen omiin paikallisiin tietorakenteisiin ja globaaleihin kaikkialla viitattaviin tietorakenteisiin, mutta ei minkään muun aliohjelman paikallisiin tietorakenteisiin. Kullakin ohjelmointikielellä on omat määrittelynsä siitä, mikä on kunkin tunnuksen näkyvyysalue (käyttöalue) ja tunnusten näkyvyysalueet toteutetaan aktivaatiotietueiden avulla. 
+Makrojen merkittävä ero aliohjelmiin on, että makroilla ei ole omaa viiteympäristöä, koska makrot laajennetaan sellaisenaan käyttökohtiinsa. Aliohjelmilla voidaan toteuttaa korkean tason kielten erilaiset viiteympäristöt. Esimerkiksi C-kielessä kussakin aliohjelmassa voi viitata sen omiin paikallisiin tietorakenteisiin ja globaaleihin kaikkialla viitattaviin tietorakenteisiin, mutta ei minkään muun aliohjelman paikallisiin tietorakenteisiin. Kullakin ohjelmointikielellä on omat määrittelynsä siitä, mikä on kunkin tunnuksen näkyvyysalue (käyttöalue) ja tunnusten näkyvyysalueet toteutetaan aktivaatiotietueiden avulla.
 
 ## Assembler kääntäminen
 Symbolisen konekielen käännös tapahtuu periaatteessa kolmessa eri vaiheessa, mutta joskus näitä vaiheita voi yhdistellä. Kussakin vaiheessa käydään läpi koko käännösyksikkö alusta loppuun. Ensimmäisessä vaiheessa lasketaan kunkin konekäskyn vievä tila, generoidaan symbolitaulu ja uudelleensijoitustaulu. Ttk-91 koneessa tämä on helppoa, koska kukin konekäsky on saman mittainen (4 tavua), mutta esimerkiksi Intelin x86 arkkitehtuurin käskyt voivat olla 1-21 tavun mittaisia. Kun koodin (ja datan) pituus tiedetään, on helppo päätellä koodiin ja dataan viittavien symbolien arvot. Ensimmäisen vaiheen jälkeen symbolitauluun on saatu tieto kaikkien tämän moduulin symbolien arvoista.
 
-``` 
+```
 Ensimmäisen vaiheen (koodin läpikäynnin) jälkeen.
 Käännösyksikkö                  Data/koodi  Symb.taulu
 x 	dc 	13           -->  ?:           13        x: ?
 y 	dc 	15           -->  ?:           15        y: ?
 
 st   in   r1, =kbd   -->  0:   3 1 0 0   1      st: 0
-     jzer r1, done   -->  1:  34 1 0 0   ?    done: ? 
+     jzer r1, done   -->  1:  34 1 0 0   ?    done: ?
      out r1, =crt    -->  5:   4 1 0 0   0
      jump st         -->  3:  32 0 0 0   0
 done svc sp,=halt    -->  4: 112 6 0 0  11    done: 4
@@ -158,36 +158,36 @@ Huomaa, että symboli _done_ esitellään jzer-käskyn yhteydessä, mutta sen ar
 
 Toisella läpikäynnillä koodi käydään uudestaan läpi konekäsky kerrallaan ja kaikki ensimmäisellä kerralla tuntemattomaksi jääneet tunnukset korvataan niiden arvolla symbolitaulusta. Koodissa voi tietenkin olla vielä viittauksia muihin moduuleihin, mutta ne ratkotaan vasta linkityksessä. Koodin käskyt voivat tässä vaiheessa olla vielä kentittäin koodattuna, eivätkä välttämättä vielä lopullisessa muodossaan konekäskynä.
 
-``` 
+```
 Toisen vaiheen (koodin läpikäynnin) jälkeen.
 Käännösyksikkö                  Data/koodi  Symb.taulu
 x 	dc 	13           -->  5:            13       x: 5
 y 	dc 	15           -->  6:            15       y: 6
 
 st   in   r1, =kbd   -->  0:   3 1 0 0   1      st: 0
-     jzer r1, done   -->  1:  34 1 0 0   4    done: 4 
+     jzer r1, done   -->  1:  34 1 0 0   4    done: 4
      out r1, =crt    -->  2:   4 1 0 0   0     ...
      jump st         -->  3:  32 0 0 0   0
-done svc sp,=halt    -->  4: 112 6 0 0  11    
+done svc sp,=halt    -->  4: 112 6 0 0  11
 ```
 
 Kolmannella läpikäynnillä luodaan varsinainen konekielinen koodi yhdistelemällä kentät ja ehkä samalla optimoimalla koodia suoritusajan suhteen. Yleensä symbolisella konekielellä kirjoitettua ei juurikaan enää optimoida, koska ohjelmoija on nimenomaan halunnut kirjoittaa kyseisen ohjelman osan symbolisella konekielellä annetussa muodossa. Todellisen suorittimen optimoidun konekielisen koodin kirjoittaminen on vaikeata, koska siinä pitää ottaa huomioon kyseessä olevan suorittimen, väylän ja muistin yksityiskohdat. Optimoinnissa täytyy esimerkiksi ottaa huomioon, kuinka kauan aikaa menee datan hakemiseen muistista, jotta data on saatavilla seuraavissa konekäskyissä ilman odotusta. Korkean tason kielten kääntäjien tekijät ovat tässä asiantuntijoita ja sen vuoksi korkean tason kielten kääntäjien tekemää koodia on (nykyään) vaikea tavallisen ohjelmoijan tehdä nopeammaksi.
 
-``` 
+```
 Kolmannen vaiheen (koodin läpikäynnin) jälkeen.
 Käännösyksikkö                Data/koodi   Symb.taulu
 x 	dc 	13            -->  5:         13       x:  5
 y 	dc 	15            -->  6:         15       y:  6
 
 st   in   r1, =kbd    -->  0:   52428801      st:  0
-     jzer r1, done    -->  1:  572522500    done:  4 
+     jzer r1, done    -->  1:  572522500    done:  4
      out r1, =crt     -->  2:   69206016    add:  17
      jump st          -->  3:  536870912    scv: 112
 done svc sp,=halt     -->  4: 1891631115    ...
 ```
 
 ## Korkean tason kielen kääntäminen
-Korkean tason kielen (Java, C, Pascal, Fortran, etc) kääntämisessä on useampi vaihe. Ensimmäisessä vaiheessa koodista etsitään kaikki sen kyseisen ohjelmointikielen _syntaktiset alkiot_ (kieliopilliset elementit). Tällaisia ovat esimerkiksi C-kielisen ohjelman 
+Korkean tason kielen (Java, C, Pascal, Fortran, etc) kääntämisessä on useampi vaihe. Ensimmäisessä vaiheessa koodista etsitään kaikki sen kyseisen ohjelmointikielen _syntaktiset alkiot_ (kieliopilliset elementit). Tällaisia ovat esimerkiksi C-kielisen ohjelman
 
 ```
 #include <stdio.h>
@@ -199,7 +199,7 @@ int main(void)
     x = 234;
     printf("%d\n", x);
 }
-``` 
+```
 
 ohjelmointikielen varatut sanat "include", "int", "main", "void" ja "printf". Niitä ovat myös kielen syntaktiset (kieliopilliset) merkit '#', '<', '>', '=', '(', ')', ';', '{' ja '}'. Lisäksi sieltä löytyy muuttujan nimi "x", kokonaisluku "234" sekä merkkijonot "stdio" ja "%d\n".
 
@@ -216,13 +216,6 @@ Koodin optimointi on vaikeata ja voi kestää hyvin kauan sen mukaan, miten teho
 
 _Rekistereiden allokointiongelma_ on tärkeä osa optimointia. Sen avulla päätellään, milloin ja mihin laiterekisteriin mitäkin dataa tulisi ohjelman suoritusaikana tallettaa. Rekistereitä on vähän ja niiden optimaalinen käyttö on tärkeätä. Esimerkiksi pitää päättää, pidetäänkö jonkin silmukan muuntelumuuttujan arvoa silmukan suorituksen aikana muistissa vai jossakin tietyssä rekisterissä (esim. r3), tai varataanko jokin rekisteri (esim. r5) koko moduulin suorituksen ajaksi usein päivitettävälle globaalille muuttujalle X.
 
-Samoin pohditaan, minkälaisilla konekäskyillä jokin tietty koodinpätkä olisi nopeinta suorittaa, tai voisiko jotkut konekäskyt jättää kokonaan pois. Tällainen päättely ei ole ihan helppoa. Ongelman tekee vielä vaativammaksi se, että nykyisissä todellisissa suorittimissa voi useaa (eri tyyppistä?) konekäskyä oikeasti suorittaa samanaikaisesti. Monen samaan aikaan suoritettavan konekäskyvirran optimointi on vielä vaativampaa kuin yhden. 
+Samoin pohditaan, minkälaisilla konekäskyillä jokin tietty koodinpätkä olisi nopeinta suorittaa, tai voisiko jotkut konekäskyt jättää kokonaan pois. Tällainen päättely ei ole ihan helppoa. Ongelman tekee vielä vaativammaksi se, että nykyisissä todellisissa suorittimissa voi useaa (eri tyyppistä?) konekäskyä oikeasti suorittaa samanaikaisesti. Monen samaan aikaan suoritettavan konekäskyvirran optimointi on vielä vaativampaa kuin yhden.
 
-<!-- Quiz 9.2.?? -->
-
-<div><quiz id="1bc3d84c-c1a1-5835-a07a-f0381756bba1"></quiz></div>
-<div><quiz id="535f0a70-2686-5bdd-8c9a-241d4dfa08a8"></quiz></div>
-<div><quiz id="98c95e84-e850-5116-bc07-5a629dc8a0bc"></quiz></div>
-<div><quiz id="ace749e5-a20e-5fee-8b63-bd5a469909b5"></quiz></div>
-<div><quiz id="c8605b1f-8f17-573e-884b-ee5e6b22e810"></quiz></div>
 

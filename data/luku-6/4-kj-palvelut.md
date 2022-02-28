@@ -74,12 +74,7 @@ MsgService equ   52
       jnzer r1, RecvTrouble    ; käsittele virhetilanteet
 ```
 
-<!-- quiz 6.4.??  ????? -->
 
-<div><quiz id="0240320d-46ff-5838-b0b5-66fa4809e5ad"></quiz></div>
-<div><quiz id="e5c27d08-ffeb-579f-b301-594d91d0c2bc"></quiz></div>
-<div><quiz id="6fcd732e-7ac7-572e-b249-2d9171b86d14"></quiz></div>
-<div><quiz id="be6cd712-e7a1-5574-ab41-fb2b5fb610c3"></quiz></div>
 
 
 <text-box variant="example" name="Historiaa:  Williams Tube -muisti">

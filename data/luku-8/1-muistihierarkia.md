@@ -19,7 +19,7 @@ Tietoa talletetaan tietokonejärjestelmiin hyvin monella eri tasolla. Lähtökoh
 <illustrations motive="ch-1-3-muistihierarkia" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
-Muistihierarkiassa on kolme selkeää tasoa. Sisimpänä ovat suorittimen kanssa samalla piirikortilla toteutetut muistit, keskimmäisellä tasolla yhdessä järjestelmässä (samassa kotelossa?) olevat nopeahkot muistit. Uloimpana verkossa olevat tai samassa järjestelmässä olevat hyvin hitaat laitteet. 
+Muistihierarkiassa on kolme selkeää tasoa. Sisimpänä ovat suorittimen kanssa samalla piirikortilla toteutetut muistit, keskimmäisellä tasolla yhdessä järjestelmässä (samassa kotelossa?) olevat nopeahkot muistit. Uloimpana verkossa olevat tai samassa järjestelmässä olevat hyvin hitaat laitteet.
 
 Kaikkien sisimpänä samalla mikropiirillä suorittimen laiterekistereiden kanssa ovat nopeimmat välimuistit. Esimerkiksi, nopeimmat tason L1 ja L2 välimuistit voivat olla toteutettuna samalla mikropiirillä suorittimen kanssa, mutta vähän hitaammat tason L3 ja L4 välimuistit voivat sijaita omilla mikropiireillään välittömästi suorittimen vieressä.
 
@@ -36,7 +36,7 @@ Massamuistilaitteet (esim. kovalevy, SSD-levy, CD-levy, DVD-levy, Blu-ray-levy, 
 
 Uusi flash-teknologiaan perustuva [SSD](https://fi.wikipedia.org/wiki/SSD) (Solid State Disk) -massamuisti on usein vielä toteutettu kovalevyn lailla ulkoisena massamuistina, mutta se voi sijaita myös valmiiksi asennettuna emolevyllä. SSD-massamuisti on yleensä toteutettu niin, että se näyttää samalta kuin pyörivä kovalevy, vaikka onkin selvästi nopeampi (esim. 10x). Samasta teknologiasta on myös nopeampi versio, [NVMe](https://en.wikipedia.org/wiki/NVM_Express) (NVM Express, Non-Volatile Memory). SSD:ssä (ja NVMe:ssä) on nopeuden lisäksi suurena etuna kovalevyyn verrattuna se, että siinä ei ole helposti vikaantuvia liikkuvia osia.
 
-Ihmisen kanssa kommunikointiin tarkoitetut laitteet (esim. näppäimistö tai hiiri) kuuluvat myös järjestelmän "sisäisiin" laitteisiin, mutta ne ovat yleensä vielä monta kertaluokkaa hitaampia kuin massamuistit. Yleensä ihminen toimii sekunnin aikaskaalassa, mutta joiden graafisten käyttöliittymien kautta toiminta voi olla huomattavasti nopeampaa. 
+Ihmisen kanssa kommunikointiin tarkoitetut laitteet (esim. näppäimistö tai hiiri) kuuluvat myös järjestelmän "sisäisiin" laitteisiin, mutta ne ovat yleensä vielä monta kertaluokkaa hitaampia kuin massamuistit. Yleensä ihminen toimii sekunnin aikaskaalassa, mutta joiden graafisten käyttöliittymien kautta toiminta voi olla huomattavasti nopeampaa.
 
 Järjestelmän ulkopuoliset muistit toimivat nekin sekunnin aikaskaalassa, koska tiedon siirtoon verkon läpi kuluu niin paljon aikaa. Tällaisia muistijärjestelmiä ovat organisaatioiden omat levypalvelimet ja erilaiset internetin pilvipalvelimet. Teoriassa tiedon hakeminen maapallon toiselta puolelta kestää tietenkin aika kauan aikaa, mutta käytännössä tieto haetaan useimmiten lähempänä olevasta www-välimuistista.
 
@@ -49,16 +49,9 @@ Virtuaalimuisti on toteutettu kaikissa nykyisissä yleiskäyttöisissä käyttö
 
 Jos ohjelma suoritusaikana viittaa muistipaikkaan, joka ei ole keskusmuistissa, tapahtuu _sivunpuutoskeskeytys_ (page fault). Se on yksi etukäteen määritellyistä keskeytystyypeistä. Sivunpuutoskeskeytyksen yhteydessä sen aiheuttanut prosessi siirretään odotustilaan ja viitattu muistialue (ja sen lähialueita) kopioidaan tukimuistista keskusmuistiin, minkä jälkeen kyseinen prosessi pääsee takaisin suoritukseen. Tällöin se suorittaa saman konekäskyn uudelleen, mutta tällä kertaa viitattu tieto löytyy keskusmuistista. Tähän kaikkeen kuluu suhteellisesti ottaen hyvin paljon aikaa, mutta toivottavasti sivunpuutoskeskeytyksiä ei tapahdu kovin usein.
 
-Jokaisen muistiviitteen kohdalla täytyy siis tarkistaa, onko viitattu muistialue keskusmuistissa ja missä siellä se mahdollisesti sijaitsee. Tällaista osoitteenmuunnosta ei voi tehdä yleensä ohjelmallisesti (usealla konekäskyllä), koska se hidastaisi suoritusta liikaa. Osoitteenmuunnosten tekemiseen nopeasti suorittimella (sen [MMU](https://en.wikipedia.org/wiki/Memory_management_unit):ssa) on oma erityislaitteistonsa, [TLB](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) (Translation Lookaside Buffer), joka toimii välimuistin tavoin. Useimmiten osoitteenmuunnos löytyy TLB:stä, mikä tekee virtuaalimuistijärjestelmien toiminnan mahdolliseksi. _TLB-hudin_ (TLB miss) yhteydessä osoitteenmuunnos täytyy tehdä tavallisilla konekäskyillä muistissa olevia osoitteenmuunnostaulukoita (_sivutaulu_ tai _segmenttitaulu_) käyttäen. Samalla tietenkin kopioidaan tehty osoitteenmuunnos TLB:hen. 
+Jokaisen muistiviitteen kohdalla täytyy siis tarkistaa, onko viitattu muistialue keskusmuistissa ja missä siellä se mahdollisesti sijaitsee. Tällaista osoitteenmuunnosta ei voi tehdä yleensä ohjelmallisesti (usealla konekäskyllä), koska se hidastaisi suoritusta liikaa. Osoitteenmuunnosten tekemiseen nopeasti suorittimella (sen [MMU](https://en.wikipedia.org/wiki/Memory_management_unit):ssa) on oma erityislaitteistonsa, [TLB](https://en.wikipedia.org/wiki/Translation_lookaside_buffer) (Translation Lookaside Buffer), joka toimii välimuistin tavoin. Useimmiten osoitteenmuunnos löytyy TLB:stä, mikä tekee virtuaalimuistijärjestelmien toiminnan mahdolliseksi. _TLB-hudin_ (TLB miss) yhteydessä osoitteenmuunnos täytyy tehdä tavallisilla konekäskyillä muistissa olevia osoitteenmuunnostaulukoita (_sivutaulu_ tai _segmenttitaulu_) käyttäen. Samalla tietenkin kopioidaan tehty osoitteenmuunnos TLB:hen.
 
 Virtuaalimuistin toteutuksessa on muutamia eri tapoja. Yleensä tukimuistista kopioidaan vakiokokoisia muistilohkoja (_sivuja_) kerrallaan ja muistilohkojen koko (sivun koko) sopii hyvin yhteen käytössä olevan tukimuistin toteutukseen. Toinen vaihtoehto on tehdä kerralla kopioitavista muistilohkoista vaihtelevan kokoisia _segmenttejä_, jolloin ne taas sopivat paremmin yhteen prosessien hallinnoimien eri kokoisten muistialueiden (esim. _koodisegmentti_, _datasegmentti_ tai _pino_) kanssa. Osoitteenmuunnos voidaan toteuttaa monitasoisena, jolloin siinä voi olla sekaisin _segmentointia_ ja _sivutusta_. Lisäksi osoitteenmuutokseen voi liittyä aikaisemmin esitetty kanta- ja rajarekistereiden käyttö.
 
 Virtuaalimuistin toteutukseen liittyy huomattava määrä käyttöjärjestelmän ohjelmistoa, mutta emme käsittele sitä tällä kurssilla tämän enempää. Virtuaalimuistijärjestelmän toiminta esitellään tarkemmin yliopiston käyttöjärjestelmäkurssilla.
 
-
-
-
-## Quizit 8.1
-<!-- Quiz 8.1.?? -->
-<div><quiz id="cec9716a-d7fd-5172-bb11-ccf2e206d787"></quiz></div>
-<div><quiz id="0e405777-52de-5a5d-9c37-387c90c195f3"></quiz></div>

@@ -118,10 +118,3 @@ Toisaalta jokainen viiteparametri voi olla riski, koska sen kautta aliohjelma p�
 Joissakin ohjelmointikieliss채 kaikki merkkijonot v채litet채채n viiteparametreina, jolloin aliohjelmat voisivat manipuloida parametreina annettuja merkkijonoja haluamikseen. T채lt채 voidaan suojautua tallettamalla merkkijonot _read only_ -muistialueelle ja rajaamalla merkkijonojen k채sittely luotettaville kirjastoaliohjelmille.
 
 
-<!-- quiz 6.3.??  ????? -->
-
-<div><quiz id="1e816b18-c189-55ec-baab-49e0e66dee31"></quiz></div>
-<div><quiz id="3986dece-8f63-5815-83aa-5fad78943028"></quiz></div>
-<div><quiz id="fd4bac1a-a2b6-5efa-a88a-3f4842c04bc2"></quiz></div>
-<div><quiz id="4a952f12-1307-5ce0-9dc6-c54e7f250d35"></quiz></div>
-<div><quiz id="d67d000b-9a64-5263-a1a1-1ecb836d43c4"></quiz></div>

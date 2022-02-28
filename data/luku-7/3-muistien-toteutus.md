@@ -5,7 +5,7 @@ hidden: false
 ---
 
 <div>
-<lead>Tietokonejärjestelmän keskusmuisti on se muistialue, jossa ohjelman koodi ja data pääasiassa sijaitsevat ohjelman suorituksen aikana. Järjestelmän optimointitavoitteiden mukaisesti osa tiedoista voi sijaita myös eri tasoisissa välimuisteissa suorittimen lähellä tai erilaisissa massamuisteissa (ks. seuraava luku) paljon kauempana suorittimelta. Ohjelman suoritus perustuu kuitenkin ajatukseen, että suorituksessa olevat konekäskyt ja niiden käyttämä data ovat keskusmuistissa (tai suorittimen rekistereissä). 
+<lead>Tietokonejärjestelmän keskusmuisti on se muistialue, jossa ohjelman koodi ja data pääasiassa sijaitsevat ohjelman suorituksen aikana. Järjestelmän optimointitavoitteiden mukaisesti osa tiedoista voi sijaita myös eri tasoisissa välimuisteissa suorittimen lähellä tai erilaisissa massamuisteissa (ks. seuraava luku) paljon kauempana suorittimelta. Ohjelman suoritus perustuu kuitenkin ajatukseen, että suorituksessa olevat konekäskyt ja niiden käyttämä data ovat keskusmuistissa (tai suorittimen rekistereissä).
 </lead>
 </div>
 
@@ -46,11 +46,6 @@ Nykyaikaan päästiin vasta 1980-luvun lopulla, kun EEPROM:ista kehitettiin [fla
 
 Sittemmin flash-muistiteknologia kehitettiin tukemaan myös massamuistien toteutusta. Esimerkiksi kännyköiden ja kameroiden muistit perustuvat tähän teknologiaan, samoin kuin muistitikut ja kovalevyjä korvaavat SSD-muistit. Edelleenkin pienenä ongelmana on, että kutakin datalohkoa voi SSD-muisteissa kirjoittaa vain jonkin rajallisen (esim. 100&nbsp;000) määrän kertoja. Tämän vuoksi toteutuksissa on yleensä enemmän muistilohkoja kuin mitä esimerkiksi muistitikun kapasiteetti antaa ymmärtää. Kun jokin muistilohko "happanee", otetaan käyttöön sen tilalle joku "varalohkoista". Halvat muistikortit ja muistitikut eivät myöskään ole ikuisia, joten niitä ei tulisi käyttää esimerkiksi valokuvien arkistointiin.
 
-## Quizit 7.3.1-2 
-<!-- Quiz 7.3.1-2 -->
-<div><quiz id="2263c2af-2aeb-553e-ad50-1f330df52437"></quiz></div>
-<div><quiz id="b2f4f7c2-2968-574c-a0af-5d313bfc4c73"></quiz></div>
-
 <text-box variant="example" name="Historiaa:  Ferriittirengasmuisti">
 
 Jay Forrester kehitti MIT:n Whirlwind-projektissa ferriittirengasmuistin (magnetic core memory), joka patentoitiin 1951. Ferriittirengasmuisti syrjäytti Williams Tube -muistit ja elohopeaviiveputkimuistit muutamassa vuodessa keskusmuistin yleisimpänä toteutustapana. Ferriittirengasmuisti perustui pieniin magneettisiin renkaisiin ja bitit talletettiin niihin renkaiden polarisaatiota vaihdellen. Renkaat olivat 2-ulotteisessa matriisissa ja jokainen bitti oli osoitettavissa sen xy-koordinaattijohtimien avulla. Kolmas johdin tarvittiin tiedon luku- ja kirjoitusoperaatioihin. Renkaiden asentaminen ohuine sähköjohtimineen oli tarkkaa käsityötä. Hyvänä puolena ferriittirenkaissa oli, että tieto säilyi niissä ilman sähkövirtaa. Toisena hyvä ominaisuutena oli, että säteily ei aiheuttanut häiriöitä talletettuun tietoon, mikä oli tärkeää sen ajan sotilas- ja avaruusteknologioille. Vielä 1970-luvun alussa ferriittirengasmuistia käytettiin Apollo-ohjelmassa kuulennoilla, tosin lennoilla käytetty tietokone ([ACG](https://en.wikipedia.org/wiki/Apollo_Guidance_Computer)) oli suunniteltu jo 1960-luvun alussa. Nyt muistiteknologiasta on jäljellä enää käsitteet "core" ja "core memory", joilla viitataan keskusmuistiin yleensä.
@@ -67,6 +62,6 @@ Jay Forrester kehitti MIT:n Whirlwind-projektissa ferriittirengasmuistin (magnet
 ## Yhteenveto
 Tämä luku käsitteli aluksi tietokonejärjestelmän sisäisiä virheensyntymekanismeja, kuinka satunnaisia virheitä voi havaita ja kuinka niitä ehkä myös voi korjata. Tarkoituksena on havaita ja mahdollisesti heti samalla korjata yleisimmät 1 bitin virheet, joita voi tapahtua muistipiireissä ja tiedon siirron aikana. Suorittimen sisällä tällaisia virheitä vastaan suojaudutaan yleensä Hamming-koodin avulla. Tämä tarkoittaa käytännössä ylimääräisiä bittejä muistipiireissä ja rekistereissä, samoin kuin ylimääräisiä johtimia tiedonsiirtoväylissä. Tietoliikenneverkoissa ovat todennäköisempiä useamman bitin virheet ja niitä vastaan suojaudutaan tarkistussummilla ja tietoliikennepakettien uudelleenlähetyksillä. Lopuksi esittelimme järjestelmän sisäisten muistien toteutusteknologiat. Niissä kaikissa voidaan käyttää myös Hamming-koodia tiedon suojaamiseen.
 
-Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
+Vastaa alla olevaan kyselyyn, kun olet opiskellut tämän luvun aiheet.
 
 <div><quiz id="bacfbe6e-9828-5e18-8e2b-bdebd1438095"></quiz></div>

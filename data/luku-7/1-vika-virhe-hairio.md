@@ -40,9 +40,3 @@ Olisi hyvä, jos kaikki ihmishenkiä uhkaavat tai suuria taloudellisia tappioita
 Useimmissa tapauksissa virhe löytyi ohjelmakoodista. Kaikki virheet luokiteltiin niiden mahdollisesti aiheuttaman häiriön perusteella luokkiin 1-5. Luokan 1 virheet olivat merkityksettömiä, eivätkä aiheuttaneet mitään lisätoimia. Luokan 5 virheet olivat sellaisia, että  kyseisen koodinpätkän suoritus avaruuslennon aikana olisi johtanut sukkulan menetykseen. Luokan 5 virheitä löytyi joka vuosi. Ne kaikki kuitenkin löydettiin ja korjattiin ennen kuin ne ehtivät aiheuttaa kategorian 5 häiriön.
 
 Yleisin varsinainen vika oli ohjelmoijien puutteellinen koulutus. Esimerkiksi, ohjelmoija ei ollut hoksannut, että koodissa olisi samanaikaisuudesta aiheutuvia ongelmia. Häiriön aiheuttaneen virheen lisäksi koko koodi käytiin läpi, josko sieltä löytyisi saman tyyppisiä virheitä. Yleensä löytyi ja myös nämä ohjelmistotuotantotiimit pääsivät lisäkoulutukseen.
-
-
-## Quizit 7.1
-<!-- Quiz 7.1.?? -->
-<div><quiz id="9c36daf0-6aea-5d2c-a8a0-4fc9914e59a4"></quiz></div>
-<div><quiz id="8436d66a-0602-5b5b-9977-82dd5ee931ec"></quiz></div>

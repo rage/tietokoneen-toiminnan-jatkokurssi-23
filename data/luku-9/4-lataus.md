@@ -5,21 +5,21 @@ hidden: false
 ---
 
 <div>
-<lead>Tässä aliluvussa kuvaamme, kuinka latausmoduulista saadaan järjestelmässä suorituskelpoinen prosessi. 
+<lead>Tässä aliluvussa kuvaamme, kuinka latausmoduulista saadaan järjestelmässä suorituskelpoinen prosessi.
 </lead>
 </div>
 
 ## Latausmoduuli
-Oletamme nyt, että latausmoduuli on staattisesti linkitetty moduuli, jonka voi sellaisenaan suorittaa. Esittelimme edellisessä aliluvussa dynaamisen linkityksen, emmekä käsittele sitä tässä sen enempää. 
+Oletamme nyt, että latausmoduuli on staattisesti linkitetty moduuli, jonka voi sellaisenaan suorittaa. Esittelimme edellisessä aliluvussa dynaamisen linkityksen, emmekä käsittele sitä tässä sen enempää.
 
-Latausmoduulissa on ohjelman koodi konekielisessä esitysmuodossa ja mistä konekäskystä pääohjelman suoritus alkaa. Siellä on määritelty tilanvaraukset kaikille globaaleille (pääohjelmatasolla) määritellyille tietorakenteille mahdollisine alkuarvoineen. Siellä on myös kerrottu, kuinka suuri pino tälle ohjelmalle tulee varata ja mitä tiedostoja täytyy avata ohjelman käynnistämisen yhteydessä. 
+Latausmoduulissa on ohjelman koodi konekielisessä esitysmuodossa ja mistä konekäskystä pääohjelman suoritus alkaa. Siellä on määritelty tilanvaraukset kaikille globaaleille (pääohjelmatasolla) määritellyille tietorakenteille mahdollisine alkuarvoineen. Siellä on myös kerrottu, kuinka suuri pino tälle ohjelmalle tulee varata ja mitä tiedostoja täytyy avata ohjelman käynnistämisen yhteydessä.
 
 ## Lataus, prosessin luonti
 Käyttöjärjestelmä (KJ) luo uuden prosessin valitsemalla ensin sille uuden prosessin tunnisteen (PID, process identifier). Prosessille varataan muistitilaa keskusmuistista sen koodia ja hallintotietoja varten. Jos käytössä on virtuaalimuisti, niin prosessille varataan muistitilaa virtuaalimuistin sivutauluille ja massamuistitilaa prosessin koko muistiavaruuden tallettamiseksi virtuaalimuistin tukimuistiin (ks. Luku 8).
 
 KJ luo prosessille sen kuvaajan (kontrollilohko, [PCB](https://en.wikipedia.org/wiki/Process_control_block), [Process Control Block](https://en.wikipedia.org/wiki/Process_control_block)). Kuvaajassa on tallessa kaikki prosessin käyttämät resurssit (ks. Luku 4). Prosessille avataan sen tarvitsemat tiedostot, laitteet ja verkkoyhteydet joko tässä yhteydessä etukäteen tai vasta prosessin suorituksen aikana. Tiedot kaikista aukiolevista tiedostoista, laitteista ja verkkoyhteyksistä ovat myös kuvaajassa. Kuvaajat ovat usein vakiokokoisia ja KJ tallettaa ne omalle muistialueelleen. Kuvaajalle ei siten yleensä tarvitse varata muistitilaa, vaan ainoastaan otetaan joku vapaana oleva kuvaaja uusiokäyttöön. Kuvaaja on (tietenkin) KJ:n omalla muistialueelle ja siihen voi viitata ainoastaan etuoikeutetussa suoritustilassa.
 
-Prosessille varataan muistitilaa pinolle, keolle ja muiden prosessien kanssa yhteisille muistialueille sen latausmoduulissa annettujen määrittelyjen mukaisesti. Kaikki tiedot talletetaan kuvaajaan. 
+Prosessille varataan muistitilaa pinolle, keolle ja muiden prosessien kanssa yhteisille muistialueille sen latausmoduulissa annettujen määrittelyjen mukaisesti. Kaikki tiedot talletetaan kuvaajaan.
 
 <!-- kuva: ch-9-4-prosessi-pcb  -->
 ![Otsake Prosessi ja sen kuvaaja (PCB). Oikealla on iso laatikko, joka kuvaa muistia. Siinä on prosessin muistialueet PC, koodi ja pino. Vasemmalla on PCB suurennettuna ja siinä ensin kentät PID ja suoritinympäristö (PC, etc). Sitten varatut muistialueet (pcp, koodi, pino), joista kustakin on nuoli oikealla olevaan muistin vastaavaan alueeseen. Lopuksi PCB.ssä on kentät tiedostot, laitteet, verkkoyhteydet, CPU-prioriteetti, jne.  Alla on väylän takana massamuistina kovalevy, josta on varattu tietty määrä tilaa virtuaalimuistin tukimuistille.](./ch-9-4-prosessi-pcb.svg)
@@ -35,8 +35,6 @@ Nyt prosessi on valmis ja järjestelmä tunnistaa sen uniikista PID:stä. Jos pr
 
 Prosessin kuvaajan tietoja ja prosessien hallintaa yleensä käsitellään tarkemmin yliopistojen käyttöjärjestelmäkursseilla.
 
-<!--  quizit 9.4.???  -->
-<div><quiz id="54c84cd7-90bd-5331-904a-09845efb42c3"></quiz></div>
 
 <text-box variant="example" name="Historiaa: Ensimmäinen korkean tason kielen kääntäjä">
 Ensimmäinen korkean tason kielen kääntäjä valmistui 1957 IBM:llä John Backuksen ryhmässä Fortran-kielelle IBM 704 -järjestelmälle. Fortrania on koko ajan kehitetty ajan mukaiseksi ja sitä voi nykyään käyttää niin lohkoperustaiseen ohjelmointiin kuin rinnakkaislaskentaa vaativiin tehtäviin. Ensimmäisen kääntäjän tekeminen kesti neljä vuotta. Kääntäjällä pystyi alusta pitäen tuottamaan optimoitua koodia, koska asiakkaat olivat tottuneet assemblerilla käsin koodattuun hyvin optimoituun koodiin.
@@ -53,7 +51,7 @@ Tässä luvussa annoimme yleiskuvan siitä, kuinka ns. "tavallisella" korkean ta
 
 On myös olemassa toisen tyyppinen ohjelmien suoritustapa. Siinä suoritettava ohjelma annetaan datana (syötteenä) jollekin käyttöjärjestelmän tunnistamalle prosessille, joka voi olla esimerkiksi tulkki, emulaattori tai simulaattori. Suoritettavan ohjelman esitysmuoto voi olla esimerkiksi jotain skriptikieltä, jonkin toisen koneen konekieltä tai korkean tason kielen kääntäjän välikieltä. Tällaista ohjelmien suoritustapaa käsitellään seuraavassa luvussa 10.
 
-Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
+Vastaa alla olevaan kyselyyn, kun olet opiskellut tämän luvun asiat.
 
 <!-- ### summary quizit lukuun 9 ??? -->
 

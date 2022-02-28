@@ -5,7 +5,7 @@ hidden: false
 ---
 
 <div>
-<lead>Tässä aliluvussa annamme yleiskuvan linkityksen toteuttamisesta. Se voidaan tehdä heti kääntämisen jälkeen, latauksen yhteydessä tai suoritusaikana.  
+<lead>Tässä aliluvussa annamme yleiskuvan linkityksen toteuttamisesta. Se voidaan tehdä heti kääntämisen jälkeen, latauksen yhteydessä tai suoritusaikana.
 </lead>
 </div>
 
@@ -27,7 +27,7 @@ Moduulin Math osoiteavaruus on 0-4999. Siellä on (ainakin) muuttuja Sum, joka o
 <illustrations motive="ch-9-3-moduulit-ennen-linkitysta"></illustrations>
 </div>
 
-Linkityksessä moduulit täytyy laittaa muistiin johonkin järjestykseen ja samalla niiden osoiteavaruudet täytyy yhdistää. Tällä kertaa laitamme ne edellä esitetyssä järjestyksessä, jolloin GameX tulee ensimmäisenä ja Math viimeisenä. Koska GameX on ensimmäisenä, niin sen osoitteet eivät muutu ja sen uudelleensijoitusvakio on nolla (0). 
+Linkityksessä moduulit täytyy laittaa muistiin johonkin järjestykseen ja samalla niiden osoiteavaruudet täytyy yhdistää. Tällä kertaa laitamme ne edellä esitetyssä järjestyksessä, jolloin GameX tulee ensimmäisenä ja Math viimeisenä. Koska GameX on ensimmäisenä, niin sen osoitteet eivät muutu ja sen uudelleensijoitusvakio on nolla (0).
 
 Seuraavaksi tulee moduuli Stats. Sitä edeltää moduuli GameX, jonka koko on 8000 sanaa, joten uudelleensijoitusvakio on 8000. Moduulin Stats kaikkiin sisäisiin viitteisiin täytyy lisätä tuo 8000, joten kaikki muuttujan a viittaukset täytyy päivittää osoitteeseen 8000 (=0+8000). Palvelurutiinin Report osoite oli 800, mutta nyt se päivittyy osoitteeksi 8800 (=800+8000). Tämä sijoitetaan myös moduulin GameX rutiinin Stats.Report kutsuosoitteeksi.
 
@@ -40,13 +40,10 @@ Kirjastomoduuli Math on viimeisenä. Sitä edeltävät moduulit GameX ja Stats, 
 <illustrations motive="ch-9-3-moduulit-jalkeen-linkityksen"></illustrations>
 </div>
 
-Linkitetyssä latausmoduulissa kaikilla symboleilla on nyt arvo. Sen EXPORT-hakemistossa on uuden linkitetyn moduulin osoitteet kaikille palvelurutiineille ja IMPORT-hakemisto on tyhjä, koska kaikki viitteet muihin moduuleihin on ratkaistu. 
+Linkitetyssä latausmoduulissa kaikilla symboleilla on nyt arvo. Sen EXPORT-hakemistossa on uuden linkitetyn moduulin osoitteet kaikille palvelurutiineille ja IMPORT-hakemisto on tyhjä, koska kaikki viitteet muihin moduuleihin on ratkaistu.
 
 Symbolien viittauskohdat on päivitetty linkitetyn moduulin uudelleensijoitustauluun siltä varalta, että linkitys vielä jostain syystä jatkuisi eteenpäin. Jos linkitystä ei enää tarvitse tehdä, niin uudelleensijoitustaulu ja symbolitaulu voidaan jättää pois.
 
-## Quizit 9.3 staattinen linkitys
-<!--  quizit 9.3.???  -->
-<div><quiz id="3641d08e-75a2-5043-a35d-4c72f7b4a5d1"></quiz></div>
 
 ## Dynaaminen linkitys
 Useissa tapauksissa on järkevää tehdä linkitys dynaamisesti vasta suoritusaikana ([run-time dynamic linking](https://en.wikipedia.org/wiki/Dynamic_linker)). Oletetaan esimerkiksi, että edellisen esimerkin GameX kirjastomoduuli Math olisi dynaamisesti linkitettävä moduuli. Nyt latausmoduulista puuttuu moduuli Math ja rutiini Math.Aver on merkitty puuttuvaksi latausmoduulin IMPORT-hakemistoon. Rutiinin Math.Aver kutsukohtaan on jollain tavoin koodattu, että viite kohdistuu dynaamiseksi linkitettävään moduuliin. Koodaus voi olla esimerkiksi epäkelpo muistiosoite, jonka avulla käyttöjärjestelmälle annetaan suoritusvuoro tarpeen tullen.
@@ -70,5 +67,3 @@ Dynaamista linkitystä voidaan tehdä myös pelkästään latausaikana (load-tim
 
 Dynaaminen linkitys voidaan tehdä myös yhdistelemällä edellä esitettyjä menetelmiä. Tällöin jonkin prosessin dynaaminen linkitys latausaikana määritellyille moduuleille aloitetaan välittömästi, mutta prosessin suoritus voi alkaa samanaikaisesti. Kyseinen prosessi jää odottamaan dynaamisen linkityksen valmistumista vain silloin, jos se viittaa sellaiseen dynaamisesti linkitettävään moduuliin, jonka linkitys ei ole vielä valmistunut. Tällä tavoin menetellään esimerkiksi järjestelmän käynnistämisen yhteydessä, kun usea käyttöjärjestelmäprosessi pitää käynnistää ja niillä voi olla paljon latausaikana dynaamisesti linkitettäviä moduuleja. Näin käyttöjärjestelmä pysyy helposti ajan tasalla, mutta järjestelmä on käytettävissä silti nopeasti. Tosin alussa järjestelmä tuntuu vähän hitaalta, koska meneillään oleva dynaaminen linkitys vaatii paljon suoritinaikaa tai käyttäjä on viitannut vielä linkittämättömiin moduuleihin.
 
-<!--  quizit 9.3. dynamic linking  -->
-<div><quiz id="7221d3f7-979a-5ac6-a472-cd7ca762d01e"></quiz></div>

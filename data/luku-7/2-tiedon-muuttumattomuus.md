@@ -71,9 +71,6 @@ P(2 bitin virhe) = 1:1000 000 000 000         = 1E-12
 P(3 bitin virhe) = 1:1000 000 000 000 000 000 = 1E-18
 ```
 
-<!-- Quiz 7.2.1-2 pariteetti etc -->
-<div><quiz id="4351027b-668b-53c6-b2d1-d8eaddedd32d"></quiz></div>
-<div><quiz id="b4d160bc-5cea-5776-b719-ab254d1e9abf"></quiz></div>
 
 <text-box variant="example" name="Richard Hamming">
 
@@ -107,9 +104,6 @@ muuttunut 'B' = 0100 0011   virheellinen data, pariteetti on väärin
 ```
 
 Pariteeettibitin kanssa kyseessä ei ole enää sama koodijärjestelmä. Esimerkiksi 'C' on ASCII-koodissa 0x43, kun se uudessa koodausjärjestelmässä olisi 0xC3.
-
-<!-- Quiz 7.2.3 Hamming-etäisyys-->
-<div><quiz id="4542f3de-21fa-5dd1-a656-47a168fb5ce8"></quiz></div>
 
 ## Hamming-koodi
 [Hamming-koodissa](https://en.wikipedia.org/wiki/Hamming_code) data-bittien joukkoon lisätään useita pariteetti-bittejä, joiden avulla yhden bitin virheet voidaan paikallistaa ja sen jälkeen korjata.  Esimerkiksi nyt myytävissä virheenkorjaavissa ECC-muistipiireissä virheenkorjaus useimmiten edelleen perustuu Hamming-koodiin, vaikka myös muita menetelmiä on käytössä.
@@ -220,9 +214,6 @@ Hamming-koodista on useita laajennuksia. Esimerkiksi lisäämällä pariteettibi
 
 Mitä lähempänä suoritinta ollaan, sitä tärkeämmäksi tulee suojautuminen (satunnaisilta) virheiltä. Suorittimen sisäisissä rekistereissä oleva ja väylillä liikkuva tieto on tärkeätä suojata muutoksilta. Kotikoneiden keskusmuisti voi usein olla suojaamatonta, mutta ainakin palvelinkoneiden muisti on yleensä ECC-muistia. ECC-muisti ei riitä, ellei myös muistiväylä ole virheiltä suojattu. Muistipiirit voi vaihtaa halutessaan kalliimpiin ECC-muisteihin. Väylää ei voi vaihtaa., koska se on kiinteä osa järjestelmää. Tämän vuoksi väylä on yleensä valmiiksi suojattu Hamming-koodilla.
 
-<!-- Quiz 7.2. Hamming-koodi -->
-
-<div><quiz id="e61d70f3-b3b2-5bcb-acf9-3bdf1e66350b"></quiz></div>
 
 ## Tiedon muuttumattomuus tietoliikenteessä
 Hamming-koodi ei sovi tiedon muuttumattomuuden havaitsemiseen sellaisessa tapauksessa, jossa muuttuneiden bittien määrä on todennäköisesti suurempi. Esimerkiksi tietoliikenteessä on tyypillistä, että jos virheitä tulee, niin sitten niitä tulee paljon. Virheiden korjaaminen on siten yleensä käytännössä mahdotonta tai sitten sen kustannus ylimääräisten bittien osalta aivan liian suuri.
@@ -254,6 +245,5 @@ Massamuistin monistaminen on aivan yleistä, myös ihan kotikoneissa. Kaupasta v
 
 Laitteiden monistaminen tiedon muuttumattomuuden turvaamiseksi on siis varsin yleistä. Se, millä tasolla virheiltä suojaaminen tapahtuu, riippuu tietenkin järjestelmän käyttötarkoituksesta. Kotikoneille voi riittää tärkeiden kuvatiedostojen replikointi kahdelle kovalevylle. Toisaalta, ydinvoimalan ohjausjärjestelmän täytyy toimia aina virheettömästi ja olemme valmiita maksamaan siitä aiheutuvat ehkä valtavatkin lisäkustannukset.
 
-<!-- Quiz 7.2.5 Tiedon suojausmenetelmät -->
-<div><quiz id="0a095a57-311f-5ace-aea4-7668564b6fd1"></quiz></div>
+
 

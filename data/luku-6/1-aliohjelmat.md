@@ -65,7 +65,7 @@ Tällä kurssilla emme käsittele nimiparametreja tämän enempää, mutta on t�
 ## Aliohjelman toteutuksen osat
 Aliohjelman toteutuksessa täytyy löytää ratkaisu seuraaviin osaongelmiin.
 
-Aliohjelmille on ominaista, että niitä voidaan kutsua lähes mistä päin tahansa koodia ja että aliohjelman suorituksen jälkeen kontrolli palaa kutsukohdan jälkeiseen konekäskyyn. Tämän toteuttamiseksi joka kutsukerralla _paluuosoite_ täytyy tallettaa johonkin. Kaikkia aliohjelmia ei kuitenkaan voi kutsua ihan joka paikasta. Esimerkiksi olio-ohjelmoinnissa olion sisäisiä metodeja voi kutsua vain kyseisen olion muista (julkisista tai sisäisistä) metodeista, koska sisäisten metodien nimet eivät näy olion ulkopuolelle. 
+Aliohjelmille on ominaista, että niitä voidaan kutsua lähes mistä päin tahansa koodia ja että aliohjelman suorituksen jälkeen kontrolli palaa kutsukohdan jälkeiseen konekäskyyn. Tämän toteuttamiseksi joka kutsukerralla _paluuosoite_ täytyy tallettaa johonkin. Kaikkia aliohjelmia ei kuitenkaan voi kutsua ihan joka paikasta. Esimerkiksi olio-ohjelmoinnissa olion sisäisiä metodeja voi kutsua vain kyseisen olion muista (julkisista tai sisäisistä) metodeista, koska sisäisten metodien nimet eivät näy olion ulkopuolelle.
 
 Aliohjelmissa voi olla eri tyyppisiä parametreja ja ne täytyy välittää kutsuvalta rutiinilta aliohjelmalle. _Parametrien välityksen_ pitää tapahtua korkean tason kielen semantiikan mukaisesti. Käytännössä yleensä riittää toteuttaa arvo- ja viiteparametrien välitys oikein. Kutsuva rutiini antaa parametreille alkuarvon ja aliohjelma voi lukea (tai kirjoittaa) niitä. Viiteparametrien kautta aliohjelma pääsee myös lukemaan ja kirjoittamaan muita kutsuvan rutiinin tietoja.
 
@@ -139,7 +139,7 @@ popr    sp  ; palauta r0-r5 arvot pinosta, sp=sp-6
 
 Todellisissa tietokoneissa on myös muita optimointimenetelmiä, joiden avulla nopeutetaan aliohjelmien käyttöä. Esimerkiksi osa aktivointitietueesta voidaan toteuttaa nopeissa erikoisrekistereissä. Nämä menetelmät eivät kuitenkaan sisälly tämän kurssin oppimistavoitteisiin.
 
-Aliohjelman kutsukäsky call suorittaa varsinaisen kontrollin siirron aliohjelmaan. Se tallettaa samassa yhteydessä paluuosoitteen ja vanhan FP-arvon pinoon. Kontrollin siirron lisäksi call-käsky asettaa FP:lle uuden arvon, joka sitten osoittaa kutsutun aliohjelman AT:hen. Call-käskyn suorittamisen jälkeen suoritetaan aliohjelman käskyjä. 
+Aliohjelman kutsukäsky call suorittaa varsinaisen kontrollin siirron aliohjelmaan. Se tallettaa samassa yhteydessä paluuosoitteen ja vanhan FP-arvon pinoon. Kontrollin siirron lisäksi call-käsky asettaa FP:lle uuden arvon, joka sitten osoittaa kutsutun aliohjelman AT:hen. Call-käskyn suorittamisen jälkeen suoritetaan aliohjelman käskyjä.
 
 ```
 call  sp, funcA ; talleta PC ja FP pinoon, aseta PC=funcA ja FP=SP
@@ -155,7 +155,4 @@ Suorittimella on yleensä call- ja exit-käskyjen lisäksi käyttöjärjestelmä
 
 Seuraavassa osiossa näytämme tarkemmin, kuinka näiden käskyjen avulla aktivaatiotietueet täsmällisesti rakennetaan ja puretaan. Se vaatii tarkan protokollan seuraamista sekä kutsuvan rutiinin että aliohjelman osalta.
 
-<!-- quiz 6.1.? -->
 
-<div><quiz id="5cf85628-5597-5849-8248-395527668376"></quiz></div>
-<div><quiz id="6afaa525-e788-5809-a8b9-1f45ab12ba1a"></quiz></div>

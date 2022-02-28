@@ -15,9 +15,9 @@ Javan välikieli on nimeltään [Bytecode](https://en.wikipedia.org/wiki/Java_by
 Javan tavukoodi on hypoteettisen Java virtuaalikoneen ([JVM](https://fi.wikipedia.org/wiki/Java), Java Virtual Machine) konekieltä, ihan samalla tavalla kuin ttk-91 konekieli on hypoteettisen ttk-91 suorittimen konekieltä. Toisin kuin ttk-91 ja sen konekieli, JVM ja sen tavukoodi ovat täydellisesti määriteltyjä.
 
 ## JVM ja pinokone
-Java virtuaalikone on geneerinen suoritin, joka toimii rajapintana kaikille Java-ohjelmien erilaisille suoritusmuodoille. Kun useimmat todelliset suorittimet sisältävät rekistereitä laskutoimituksia varten, niin JVM:ssä kaikki laskentaa perustuu pinoon. Laskutoimitusten argumentit ovat aina pinon pinnalla ja aritmeettis-loogisssa operaatiossa ne korvautuvat laskutoimituksen tuloksella. Tyypillistä tällaisessa [pinokoneessa](https://en.wikipedia.org/wiki/Stack_machine) on, että aritmeettis-loogisissa operaatioissa ei tarvitse nimetä yhtään operandia, koska ne löytyvät oletusarvoisista paikoista pinon pinnalta. Operaation suorituksessa operandit otetaan pois pinosta ja tulos talletetaan pinoon. 
+Java virtuaalikone on geneerinen suoritin, joka toimii rajapintana kaikille Java-ohjelmien erilaisille suoritusmuodoille. Kun useimmat todelliset suorittimet sisältävät rekistereitä laskutoimituksia varten, niin JVM:ssä kaikki laskentaa perustuu pinoon. Laskutoimitusten argumentit ovat aina pinon pinnalla ja aritmeettis-loogisssa operaatiossa ne korvautuvat laskutoimituksen tuloksella. Tyypillistä tällaisessa [pinokoneessa](https://en.wikipedia.org/wiki/Stack_machine) on, että aritmeettis-loogisissa operaatioissa ei tarvitse nimetä yhtään operandia, koska ne löytyvät oletusarvoisista paikoista pinon pinnalta. Operaation suorituksessa operandit otetaan pois pinosta ja tulos talletetaan pinoon.
 
-Rekisteripohjaiset suorittimet toimivat hyvin eri tavalla. Aritmeettis-loogisissa operaatioissa on yleensä nimetty kolme rekisteriä, joista yksi on tulosrekisteri. Tällä tavoin kummankaan operandin arvoa ei tarvitse tuhota. Ttk-91 suorittimessa aritmeettis-loogisissa operaatioissa oli vain kaksi nimettyä operandia ja tulos talletetaan aina ensimmäisen operandin (rekisterin) päälle. 
+Rekisteripohjaiset suorittimet toimivat hyvin eri tavalla. Aritmeettis-loogisissa operaatioissa on yleensä nimetty kolme rekisteriä, joista yksi on tulosrekisteri. Tällä tavoin kummankaan operandin arvoa ei tarvitse tuhota. Ttk-91 suorittimessa aritmeettis-loogisissa operaatioissa oli vain kaksi nimettyä operandia ja tulos talletetaan aina ensimmäisen operandin (rekisterin) päälle.
 
 Esimerkki. Katsotaan lausekkeen _z = (x+y)(x+5)_ toteutusta suorittimilla, joissa aritmeettis-loogisissa operaatioissa on 0, 2 tai 3 operandia. Kolmen operandin esimerkki on [load-store](https://en.wikipedia.org/wiki/Load/store_architecture) arkkitehtuuri, jossa muistiviitekäskyt ovat erillään aritmeettis-loogisista operaatioista.
 
@@ -36,7 +36,7 @@ pop z
 
 JVM ei määrittele, onko suorituksessa rinnakkaisuutta vai ei. On täysin mahdollista, että yhdestä prosessista on samanaikaisesti suorituksessa useampi säie. Esimerkiksi kaksi peräkkäistä toisistaan riippumatonta metodin kutsua voisivat olla yhtä aikaa suorituksessa (moniytimisellä) laitteistolla, jos vain käytössä oleva JVM:n toteutus tämän sallii.
 
-Javan virtuaalikone voidaan toteuttaa usealla eri tavalla, mikä tekee tästä mielenkiintoisen ohjelmien suoritusmallin. Suoritettava Java-ohjelma siis käännetään aina ensin tavukoodiksi, jonka jälkeen se suoritetaan _jollain tavalla toteutetulla_ JVM:llä. Periaatteessa on ainakin neljä tapaa toteuttaa JVM ja Java-ohjelmia voi sitten suorittaa noilla kaikilla tavoilla. Suoritustavat esitellään tässä lyhyesti ja seuraavassa aliluvussa tarkemmin. 
+Javan virtuaalikone voidaan toteuttaa usealla eri tavalla, mikä tekee tästä mielenkiintoisen ohjelmien suoritusmallin. Suoritettava Java-ohjelma siis käännetään aina ensin tavukoodiksi, jonka jälkeen se suoritetaan _jollain tavalla toteutetulla_ JVM:llä. Periaatteessa on ainakin neljä tapaa toteuttaa JVM ja Java-ohjelmia voi sitten suorittaa noilla kaikilla tavoilla. Suoritustavat esitellään tässä lyhyesti ja seuraavassa aliluvussa tarkemmin.
 
 <!-- Kuva: ch-10-2-java-ohjelmien-suoritus -->
 
@@ -45,7 +45,7 @@ Javan virtuaalikone voidaan toteuttaa usealla eri tavalla, mikä tekee tästä m
 <illustrations motive="ch-10-2-java-ohjelmien-suoritus" frombottom="0" totalheight="40%"></illustrations>
 </div>
 
-Tulkitseminen tarkoittaa sitä, että käytössä on ohjelma _JVM tulkki_ (tulkki, Java tulkki), jossa on kaikki JVM:n rakenteet toteutettu tulkin (ohjelman) tietorakenteina. Java-tulkki lukee datana tavukoodin käskyjä yksi kerrallaan ja sitten toteuttaa käskyjen aiheuttamat muutokset JVM:n tietorakenteissa. Esimerkiksi _iadd_-käsky poistaa pinon pinnalta kaksi kokonaislukua ja tallettaa pinon pinnalle niiden summan. Java tulkki on normaali korkean tason kielellä toteutettu ohjelma, joka on käännetty ja linkitetty käytössä olevaan järjestelmään. Järjestelmä voi käyttää mitä tahansa suoritinta, esimerkiksi Intelin Pentium II:sta. Suoritustapa on hyvin samanlainen kuin miten Titokone lukee ttk-91 konekäskyjä ja emuloi niiden aiheuttamia muutoksia simuloiduissa ttk-91 rekistereissa ja muistissa. 
+Tulkitseminen tarkoittaa sitä, että käytössä on ohjelma _JVM tulkki_ (tulkki, Java tulkki), jossa on kaikki JVM:n rakenteet toteutettu tulkin (ohjelman) tietorakenteina. Java-tulkki lukee datana tavukoodin käskyjä yksi kerrallaan ja sitten toteuttaa käskyjen aiheuttamat muutokset JVM:n tietorakenteissa. Esimerkiksi _iadd_-käsky poistaa pinon pinnalta kaksi kokonaislukua ja tallettaa pinon pinnalle niiden summan. Java tulkki on normaali korkean tason kielellä toteutettu ohjelma, joka on käännetty ja linkitetty käytössä olevaan järjestelmään. Järjestelmä voi käyttää mitä tahansa suoritinta, esimerkiksi Intelin Pentium II:sta. Suoritustapa on hyvin samanlainen kuin miten Titokone lukee ttk-91 konekäskyjä ja emuloi niiden aiheuttamia muutoksia simuloiduissa ttk-91 rekistereissa ja muistissa.
 
 JVM:n voi toteuttaa myös suoraan laitteistolla _JVM suorittimella_ (Java suorittimella), joka suorittaa tavukoodia konekäskyinä. Tässä tapauksessa latausmoduuli siis sisältää alkuperäisen Java-ohjelman tavukoodisen esityksen ja prosessin suoritusaikana tavukoodi luetaan koodina eikä datana. Tämä vastaa tilannetta, jossa (täydellisesti määritelty) ttk-91 toteutettaisiin oikeasti todellisena suorittimena.
 
@@ -59,14 +59,14 @@ Java virtuaalikoneessa on _pino_, jossa on ohjelman tietorakenteet, välitulokse
 
 Tavukoodissa on pinolle normaalien "push/pop"-käskyjen lisäksi JVM:ssä omat "push/pop"-käskynsä myös _kehyksille_ (JVM:n "aktivaatiotietueille") , jolloin niitä ei tarvitse rakentaa ja purkaa sana kerrallaan. Kehysten käyttöä tarkennetaan ihan kohta.
 
-JVM:n pinon ei tarvitse olla yhtenäisellä muistialueella, vaan se allokoidaan _keosta_ (kuten kaikki muutkin JVM:n tietorakenteet). Pinon koko voi olla rajallinen tai dynaamisesti laajennettavissa, jolloin pinon muistitilan loppuessa sille voidaan varata lisää muistitilaa keosta. Sama pätee kaikkiin muihinkin JVM:n varaamiin tietorakenteisiin. 
+JVM:n pinon ei tarvitse olla yhtenäisellä muistialueella, vaan se allokoidaan _keosta_ (kuten kaikki muutkin JVM:n tietorakenteet). Pinon koko voi olla rajallinen tai dynaamisesti laajennettavissa, jolloin pinon muistitilan loppuessa sille voidaan varata lisää muistitilaa keosta. Sama pätee kaikkiin muihinkin JVM:n varaamiin tietorakenteisiin.
 
 Pinoon osoittaa kaksi rekisteriä. SP (stack pointer) osoittaa pinon päällimmäiseen alkioon ja LV (local variables frame) nykykehyksen alkuun ja samalla sen ensimmäiseen paikalliseen muuttujaan. Kumpaankaan näistä rekistereistä (kuten ei muihinkaan JVM:n rekistereistä) ei mitenkään nimetä JVM:n konekäskyissä, vaan kaikki rekisteriviittaukset ovat implisiittisiä. Esimerkiksi add-käsky viittaa dataan aina SP:n kautta, vaikka SP:tä ei mitenkään nimetä konekäskyssä. SP:n käyttö tässä tapauksessa päätellään operaatiokoodista (add).
 
 Allaolevan esimerkin lähtötilanteessa ollaan suorittamassa jotain Javan _metodia_ (aliohjelmaa), jossa on kolme kokonaislukuarvoista paikallista muuttujaa. Paikallisen muuttujan _i_ arvo on 111, _j_:n arvo on 222 ja _k_:n arvo on 700. Ne ovat pinossa tämän kutsukerran kehyksessä, jonka alkuun osoittaa LV. Rekisteri SP osoittaa pinon huipulle. Tavukoodissa seuraavana olevilla käskyillä lasketaan Javan lause "k=i+j;". Suoritusaikana tavukoodi on (tietenkin) vain numeerisia tavuja, mutta esimerkin vuoksi se esitetään tässä (myös) tekstuaalisessa muodossa. Koodinpätkän seitsemän tavun heksadesimaaliesityksen ja tekstuaalisen tavukoodin välillä on suoraviivainen vastaavuus.
 
 ```
-Tavukoodi tekstuaalisena    tavuina        
+Tavukoodi tekstuaalisena    tavuina
           iload i           0x15 0x02      i:n osoite on LV+2
           iload j           0x15 0x03      j:n osoite on LV+3
           iadd              0x60
@@ -80,31 +80,31 @@ Tavukoodi tekstuaalisena    tavuina
 <illustrations motive="ch-10-2-yhteenlasku-pinossa" frombottom="0" totalheight="40%"></illustrations>
 </div>
 
-Pinokoneiden heikkoutena on, että jokainen aritmeettinen operaatio tuhoaa molemmat operandinsa. Argumenttien arvot täytyy aina kopioida pinon huipulle ennen aritmeettis-loogisia operaatioita ja niiden tulokset täytyy vastaavasti ottaa talteen operaation jälkeen. Lisäksi tarvitaan erilaisia replikointikäskyjä, joilla monistetaan pinon pinnalla olevia arvoja. 
+Pinokoneiden heikkoutena on, että jokainen aritmeettinen operaatio tuhoaa molemmat operandinsa. Argumenttien arvot täytyy aina kopioida pinon huipulle ennen aritmeettis-loogisia operaatioita ja niiden tulokset täytyy vastaavasti ottaa talteen operaation jälkeen. Lisäksi tarvitaan erilaisia replikointikäskyjä, joilla monistetaan pinon pinnalla olevia arvoja.
 
 Paikallisiin muuttujiin ja muihin tietorakenteisiin viitataan käyttäen niiden suhteellisia osoitteita LV:n suhteen. Tilanne on täysin vastaava kuin ttk-91:ssä aliohjelmien paikallisiin muuttujiin viittaaminen aktivaatiotietueen osoitteen (FP) suhteen.
 
-Ensimmäinen käsky _iload i_ kopioi paikallisen muuttujan _i_ arvon 111 pinon huipulle ja toinen käsky _iload j_ kopioi vastaavasti paikallisen muuttujan _j_ arvon 222 pinon huipulle. Yhteenlaskukäsky _iadd_ ottaa argumentit pois pinosta, laskee niiden summan 333 ja tallettaa sen pinon huipulle. Lopulta pinoon talletuskäsky _istore k_ ottaa tuloksen pois pinosta ja tallettaa sen _k_:n arvoksi. 
+Ensimmäinen käsky _iload i_ kopioi paikallisen muuttujan _i_ arvon 111 pinon huipulle ja toinen käsky _iload j_ kopioi vastaavasti paikallisen muuttujan _j_ arvon 222 pinon huipulle. Yhteenlaskukäsky _iadd_ ottaa argumentit pois pinosta, laskee niiden summan 333 ja tallettaa sen pinon huipulle. Lopulta pinoon talletuskäsky _istore k_ ottaa tuloksen pois pinosta ja tallettaa sen _k_:n arvoksi.
 
 Koska _iload_-käskyn parametrin arvo on useimmiten 0, 1, 2 tai 3, niin niitä varten [tavukoodin käskyissä](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) on myös omat yhden tavun konekäskynsä *iload_0*,  *iload_1*, *iload_2* ja  *iload_3*. Käskyllä _istore_ on vastaavat optiot, mutta siinäkin vain parametriarvoihin 0-3. Näitä käskyjä käyttäen em. koodinpätkän saisi tavukoodina mahtumaan vain 5 tavuun.
 
 
 ```
-Tavukoodi tekstuaalisena    tavuina        
+Tavukoodi tekstuaalisena    tavuina
           iload i           0x1c           i:n osoite on LV+2
           iload j           0x1d           j:n osoite on LV+3
           iadd              0x60
           istore k          0x36 0x04      k:n osoite on LV+4
 ```
 
-Tämä näyttää vähän tehottomalta, kun operandeja pitää kopioida pinon pinnalle laskutoimituksia varten, molemmat operandit tuhoutuvat aritmetiikkaoperaatioissa ja kaikki dataviitteet kohdistuvat muistissa olevaan pinoon. Rekisteripohjaisissa suorittimissa JVM:n emulointi onkin vaikeaa, kun suoritinarkkitehtuurien peruslähtökohdat ovat niin erilaisia pinokoneella ja rekisterikoneella. 
+Tämä näyttää vähän tehottomalta, kun operandeja pitää kopioida pinon pinnalle laskutoimituksia varten, molemmat operandit tuhoutuvat aritmetiikkaoperaatioissa ja kaikki dataviitteet kohdistuvat muistissa olevaan pinoon. Rekisteripohjaisissa suorittimissa JVM:n emulointi onkin vaikeaa, kun suoritinarkkitehtuurien peruslähtökohdat ovat niin erilaisia pinokoneella ja rekisterikoneella.
 
 ### JVM:n keko, metodialue ja vakioallas
-JVM:ssä kaikki muistinhallinta on keskitetty JVM:n omaan kekoon. Aina kun ohjelma tarvitsee lisää muistitilaa (esim. uudelle Javan _oliolle_ eli luokan ilmentymälle Java-operaatiolla _new_), niin JVM:n toteutusympäristö varaa sen tästä keosta. Vastaavasti, jos JVM itse tarvitsee lisää muistitilaa (esim. pinoa varten), niin myös se varataan täältä. 
+JVM:ssä kaikki muistinhallinta on keskitetty JVM:n omaan kekoon. Aina kun ohjelma tarvitsee lisää muistitilaa (esim. uudelle Javan _oliolle_ eli luokan ilmentymälle Java-operaatiolla _new_), niin JVM:n toteutusympäristö varaa sen tästä keosta. Vastaavasti, jos JVM itse tarvitsee lisää muistitilaa (esim. pinoa varten), niin myös se varataan täältä.
 
-JVM:ssä ei ole mitään varatun tilan vapauttamiskäskyä, vaan tila vapautuu uusiokäyttöön _automaattisen roskienkeruun_ kautta. Se tarkoittaa, että aika ajoin (a) laskenta pysähtyy, (b) roskienkeruu käynnistyy ja vapauttaa aikaisemmin varatun mutta ei enää käytössä olevan muistitilan ja (c) lopulta laskenta voi jatkua. Roskienkeruu tapahtuu esimerkiksi siten, että ensin merkitään kaikki muistialueet vapaiksi. Sitten käydään läpi kaikki ohjelman ja JVM:n sillä hetkellä käytössä olevat muistialueet merkiten ne samalla varatuiksi. Lopuksi otetaan uusiokäyttöön jäljelle jääneet vapaaksi merkityt alueet. Ymmärrettävästi tämä voi viedä aikaa. Roskienkeruu on ongelmallista, koska se pysäyttää laskennan satunnaisiin aikoihin ja voi kestää pitkäänkin. 
+JVM:ssä ei ole mitään varatun tilan vapauttamiskäskyä, vaan tila vapautuu uusiokäyttöön _automaattisen roskienkeruun_ kautta. Se tarkoittaa, että aika ajoin (a) laskenta pysähtyy, (b) roskienkeruu käynnistyy ja vapauttaa aikaisemmin varatun mutta ei enää käytössä olevan muistitilan ja (c) lopulta laskenta voi jatkua. Roskienkeruu tapahtuu esimerkiksi siten, että ensin merkitään kaikki muistialueet vapaiksi. Sitten käydään läpi kaikki ohjelman ja JVM:n sillä hetkellä käytössä olevat muistialueet merkiten ne samalla varatuiksi. Lopuksi otetaan uusiokäyttöön jäljelle jääneet vapaaksi merkityt alueet. Ymmärrettävästi tämä voi viedä aikaa. Roskienkeruu on ongelmallista, koska se pysäyttää laskennan satunnaisiin aikoihin ja voi kestää pitkäänkin.
 
-Pinossa on jokaiselle metodin kutsulle sitä vastaava kehys, jonka päällä voi vielä olla siinä metodissa käytössä olevat välitulokset. Pinoa käytetään siis sekä metodin kutsurakenteen toteutukseen että laskennan välitulosten tallentamiseen. 
+Pinossa on jokaiselle metodin kutsulle sitä vastaava kehys, jonka päällä voi vielä olla siinä metodissa käytössä olevat välitulokset. Pinoa käytetään siis sekä metodin kutsurakenteen toteutukseen että laskennan välitulosten tallentamiseen.
 
 <!-- Kuva: ch-10-2-muistialueet -->
 
@@ -113,14 +113,14 @@ Pinossa on jokaiselle metodin kutsulle sitä vastaava kehys, jonka päällä voi
 <illustrations motive="ch-10-2-muistialueet" frombottom="0" totalheight="40%"></illustrations>
 </div>
 
-JVM:ssä on SP:n ja LV:n lisäksi vain kaksi muuta rekisteriä. Rekisteri PC on tavanomainen paikanlaskuri ja osoittaa seuraavaksi suoritettavaan (tavukoodiseen) käskyyn nykyisessä metodissa. Metodien koodit on talletettu omalle metodialueelleen (JVM Method Area), joka on yhteinen kaikille yhden prosessin säikeille. 
+JVM:ssä on SP:n ja LV:n lisäksi vain kaksi muuta rekisteriä. Rekisteri PC on tavanomainen paikanlaskuri ja osoittaa seuraavaksi suoritettavaan (tavukoodiseen) käskyyn nykyisessä metodissa. Metodien koodit on talletettu omalle metodialueelleen (JVM Method Area), joka on yhteinen kaikille yhden prosessin säikeille.
 
 Rekisteri CPP (Constant Pool Pointer) osoittaa _vakioaltaaseen_ (constant pool), jossa on kaikki ohjelman käyttämät vakiot ja muut symboliset viitteet. Vakioaltaan tietoihin viitataan käyttäen niiden suhteellista osoitetta CPP:n suhteen. Jokaiselle Javan luokalle (class) ja liittymälle (interface) on oma vakioaltaansa, joka on suoritusaikainen esitystapa tiedoston _class constant pool_ taulukolle. Tämä vastaa vähän symbolitaulua (tai sen osaa). Vakioaltaassa on useita eri tyyppisiä vakioita, kuten esimerkiksi tavalliset literaalit ja suoritusaikana ratkottavat attribuutit dynaamista linkitystä (JIT) varten. Vakioaltaat varataan tietenkin keosta.
 
 Jos suoritettavia säikeitä on useita, niin kaikilla on omat rekisterinsä, pinonsa ja vakioaltaansa. Niillä on kuitenkin yhteinen metodialue ja keko.
 
 ### Metodin kutsu
-Metodin kutsukäsky on _invokevirtual_ ja se luo uuden kehyksen pinoon. Ennen käskyä _invokevirtual_ kutsuja laittaa pinoon viitteen kutsuttavan _olion_ luokkaan ja parametrien arvot. Käskyssä _invokevirtual_ annetaan parametrina viite kutsuttavaan metodiin ja käskyn _invokevirtual_ suorituksen jälkeen uusi kehys on valmis. 
+Metodin kutsukäsky on _invokevirtual_ ja se luo uuden kehyksen pinoon. Ennen käskyä _invokevirtual_ kutsuja laittaa pinoon viitteen kutsuttavan _olion_ luokkaan ja parametrien arvot. Käskyssä _invokevirtual_ annetaan parametrina viite kutsuttavaan metodiin ja käskyn _invokevirtual_ suorituksen jälkeen uusi kehys on valmis.
 
 Esimerkki. Tarkastellaan metodia _A_, jossa on paikalliset muuttujat _x_ ja _y_. Metodissa _A_ on seuraavana Java-lausetta _y=Obj.B(x, 5)_ vastaava tavukoodinen kutsu. Kutsun voisi toteuttaa vaikkapa seuraavalla tavalla.
 
@@ -143,7 +143,7 @@ invokevirtual #37   0xb6 0x00 0x25   viite metodiin B on CPP+37:ssä
 
 Esimerkissä käskyn _invokevirtual_ jälkeen kutsutun metodin _B_ kehys on valmis. Paluusoite löytyy epäsuorasti osoitteesta LV, parametrit ovat osoitteissa LV+1 ja LV+2, minkä jälkeen pinossa on paikalliset muuttujat. Pinon pinnalla on aikaisemman metodin _A_ kehyksen osoite, mitä tarvitaan metodista _B_ paluun yhteydessä.
 
-Oletetaan nyt, että metodi _B_ palauttaa arvonaan yhden kokonaisluvun, joka on ennen metodista paluukäskyä _ireturn_ talletettu pinon pinnalle. 
+Oletetaan nyt, että metodi _B_ palauttaa arvonaan yhden kokonaisluvun, joka on ennen metodista paluukäskyä _ireturn_ talletettu pinon pinnalle.
 
 ```
 metodi Obj.B
@@ -160,7 +160,7 @@ ireturn           0xac        palauta paluuarvo ja kontrolli kutsuvaan rutiiniin
 <illustrations motive="ch-10-2-metodista-paluu" frombottom="0" totalheight="40%"></illustrations>
 </div>
 
-Käskyn _ireturn_ suorituksessa metodin _B_ kehyksen tiedoilla palautetaan rekistereiden PC, LV ja SP arvot ennalleen ja kopioidaan paluuarvo pinon huipulle. Metodin _A_ suoritus voi nyt jatkua ja ensimmäisenä se tietenkin ottaa paluuarvon talteen.  
+Käskyn _ireturn_ suorituksessa metodin _B_ kehyksen tiedoilla palautetaan rekistereiden PC, LV ja SP arvot ennalleen ja kopioidaan paluuarvo pinon huipulle. Metodin _A_ suoritus voi nyt jatkua ja ensimmäisenä se tietenkin ottaa paluuarvon talteen.
 
 Metodin _B_ käyttö on nyt kokonaisuudessaan seuraavanlainen.
 
@@ -179,14 +179,14 @@ istore y            0x36 0x04        paluuarvo pinosta muuttujaan y, osoite LV+4
 Tarkoituksena ei ole tässä käydä kaikkia [tavukoodin käskyjä](https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings) läpi, vaan antaa yleiskuva niistä. Alla käydään kursorisesti läpi tavukoodin tietotyypit, tiedonosoitusmoodit ja erilaiset käskytyypit.
 
 ### Tietotyypit
-Käytössä on 1-, 2-, 4- ja 8-tavuiset kokonaisluvut. Datatyyppien nimet ovat vastaavasti _byte_, _short_, _int_ ja _long_. Negatiiviset luvut esitetään kahden komplementin esitysmuodossa. Pieni 1-2 tavun data pakataan taulukoihin ja niihin viitataan taulukoissa omilla load- ja store-konekäskyillä. Pinossa ja vakioaltaassa kaikki data on kokonaisina sanoina. 
+Käytössä on 1-, 2-, 4- ja 8-tavuiset kokonaisluvut. Datatyyppien nimet ovat vastaavasti _byte_, _short_, _int_ ja _long_. Negatiiviset luvut esitetään kahden komplementin esitysmuodossa. Pieni 1-2 tavun data pakataan taulukoihin ja niihin viitataan taulukoissa omilla load- ja store-konekäskyillä. Pinossa ja vakioaltaassa kaikki data on kokonaisina sanoina.
 
 Liukuluvut esitetään [IEEE liukulukustandardin](https://en.wikipedia.org/wiki/IEEE_floating_point) mukaisesti. Tavallinen liukuluku _float_ on 4 tavua (32 bittiä) ja kaksoistarkkuuden liukuluku _double_ on 8 tavua (64 bittiä).
 
 Merkit esitetään käyttäen etumerkitöntä [Unicode](https://en.wikipedia.org/wiki/Unicode) merkistöä, jossa kukin merkki esitetään kahdella tavulla. Merkkijonot talletetaan kekoon ja niiden viitetiedot vakioaltaaseen. JVM:n merkkejä tai merkkijonoja ei käsitellä tämän enempää.
 
 ### Tiedonosoitusmoodi
-Tavukoodissa tiedonosoitus on välitöntä tai indeksoitua. Indeksoidut viitteet ovat suhteessa SP-, LV- tai CPP-rekistereihin, mutta rekisteri määräytyy implisiittisesti konekäskyyn mukaan. 
+Tavukoodissa tiedonosoitus on välitöntä tai indeksoitua. Indeksoidut viitteet ovat suhteessa SP-, LV- tai CPP-rekistereihin, mutta rekisteri määräytyy implisiittisesti konekäskyyn mukaan.
 
 ```
 iadd               0x60             implisiittiset dataviittaukset pinoon, osoitteet SP, SP-1
@@ -197,16 +197,16 @@ iload 6            0x15 0x06        viite dataan osoitteessa LV+6 (indeksoitu vi
 invokevirtual #37  0xb6 0x00 0x25   viite dataan osoitteessa CPP+37 (indeksoitu viite)
 ```
 
-Koodiin voi tehdä myös indeksoituja viitteitä suhteessa PC-rekisterin arvoon. Koodiviitteet ovat _tavuosoitteita_, koska käskyjen pituudet voivat 1-17 tavua (yleensä 1-3 tavua). 
+Koodiin voi tehdä myös indeksoituja viitteitä suhteessa PC-rekisterin arvoon. Koodiviitteet ovat _tavuosoitteita_, koska käskyjen pituudet voivat 1-17 tavua (yleensä 1-3 tavua).
 
 ```
 invokevirtual #37   0xb6 0x00 0x25   PC saa CPP+37:ssä olevan arvon (metodin osoitteen luokassa)
-goto -27            0xa7 0x80 0x1B   PC saa arvon PC-27, ehdoton hyppy taaksepäin, 
+goto -27            0xa7 0x80 0x1B   PC saa arvon PC-27, ehdoton hyppy taaksepäin,
                                      siirtymän määrä 16-bittisenä etumerkillisenä kokonaislukuna
 ```
 
 ### Käskytyypit
-Käytössä on useita tietotyyppejä ja kussakin aritmeettis-loogisessa operaatiossa argumenttien täytyy olla saman kokoisia ja samaa tyyppiä. Tätä varten käskykannassa on useita datan tyypinmuunnoskäskyjä. 
+Käytössä on useita tietotyyppejä ja kussakin aritmeettis-loogisessa operaatiossa argumenttien täytyy olla saman kokoisia ja samaa tyyppiä. Tätä varten käskykannassa on useita datan tyypinmuunnoskäskyjä.
 
 ```
 i2b       0x91       muuta 32-bittinen kokonaisluku (word) 8-bittiseksi (byte). Etumerkki!
@@ -217,7 +217,7 @@ d2i       0x8e       muuta 64-bittinen liukuluku (double) 32-bittiseksi kokonais
 
 Tiedonsiirtokäskyistä on jo esitelty käskyjä, joilla kopioidaan 32-bittinen kokonaisluku pinon pinnalle tai siirretään pinon pinnalla olevaa dataa muualle. Vastaavat käskyjä on eri pituisille data-alkioille ja tietotyypeille. Aritmeettis-loogisten lausekkeiden toteutuksissa pinon pinnalla olevaa dataa tarvitsee usein monistaa tai järjestää uuteen järjestykseen.
 
-``` 
+```
 iload_2        0x1c            push (LV+2)     tuo kokonaisluku
 istore 17      0x36 0x11       pop  (LV+17)    vie kokonaisluku
 lload  12      0x16 0x0C       push (LV+12)    tuo pitkä kokonaisluku
@@ -226,15 +226,15 @@ dstore 6       0x39 0x06       pop  (LV+6)     vie pitkä liukuluku
 aload 3        0x2d 0x03       push (LV+3)     tuo viite (osoite)
 dup            0x59            push (SP)       monista data
 dup_x2         0x5b            push (SP-2)     monista data
-dup2           0x5c            push (SP)       monista pitkä data 
+dup2           0x5c            push (SP)       monista pitkä data
 swap           0x5f            swap(SP, SP-1)  vaihda sanat
 bipush 5       0x10 0x05       push (5)        tuo kokonaislukuvakio
 iconst_1       0x04            push 1          tuo kokonaislukuvakio
 fconst_1       0x0c            push 1.0        tuo liukulukuvakio
-getstatic #35  0xb2 0x00 0x23  push (CPP+35)   tuo luokan viite 
+getstatic #35  0xb2 0x00 0x23  push (CPP+35)   tuo luokan viite
 ```
 
-Taulukkoviitteet ovat JVM:ssä yllättävän vaikeita. Taulukot talletetaan kekoon ja niiden viitetiedot vakioaltaaseen. Taulukoihin viitataan kehyksen muuttujista. Taulukkoviittauksessa pinoon tuodaan ensin taulukon viite (osoite vakioaltaassa) ja indeksi, minkä jälkeen vasta voidaan tehdä varsinainen viittaus taulukkoon. Esimerkiksi, Java-lauseen "a=t[i];" toteutus tavukoodilla voisi olla 
+Taulukkoviitteet ovat JVM:ssä yllättävän vaikeita. Taulukot talletetaan kekoon ja niiden viitetiedot vakioaltaaseen. Taulukoihin viitataan kehyksen muuttujista. Taulukkoviittauksessa pinoon tuodaan ensin taulukon viite (osoite vakioaltaassa) ja indeksi, minkä jälkeen vasta voidaan tehdä varsinainen viittaus taulukkoon. Esimerkiksi, Java-lauseen "a=t[i];" toteutus tavukoodilla voisi olla
 
 ```
 aload_1         0x2b          push (LV+1)   taulukon viite t (parametrissa 1)
@@ -243,7 +243,7 @@ iaload          0x2e          push (t[i])   korvaa t ja i alkion t[i] arvolla
 istore_3        0x3e          pop (LV+3)    taulukon kokonaislukuarvo (paikallinen muuttuja 1)
 ```
 
-Jos taulukko t sisältäisi neljän tavun kokonaislukujen asemesta yhden tavun kokonaislukuja, niin saman lauseen toteutus olisi 
+Jos taulukko t sisältäisi neljän tavun kokonaislukujen asemesta yhden tavun kokonaislukuja, niin saman lauseen toteutus olisi
 
 ```
 aload_1         0x2b          push (LV+1)   taulukon viite t
@@ -252,7 +252,7 @@ baload          0x33          push (t[i])   laajennna tavu samalla sanaksi
 istore_3        0x3e          pop (LV+3)    tallenna kokonaislukuarvo sanana
 ```
 
-Kontrollinsiirtokäskyjä on paljon, koska eri tietotyypeille tarvitaan kullekin omat ehdolliset haarautumiskäskynsä. 
+Kontrollinsiirtokäskyjä on paljon, koska eri tietotyypeille tarvitaan kullekin omat ehdolliset haarautumiskäskynsä.
 
 ```
 goto -27            0xa7 0x80 0x17   PC saa arvon PC-27, ehdoton hyppy taaksepäin
@@ -265,7 +265,7 @@ invokevirtual #37   0xb6 0x00 0x25   call (CPP+37)
 ireturn             0xac             palaa kutsutusta metodista
 ```
 
-Aritmeettis-loogisia operaatioita on vastaavasti useita, koska yhden tai kahden sanan pituusvaihtoehdoille tarvitaan omat käskynsä.  
+Aritmeettis-loogisia operaatioita on vastaavasti useita, koska yhden tai kahden sanan pituusvaihtoehdoille tarvitaan omat käskynsä.
 
 ```
 iadd      0x60     kokonaislukujen (int) yhteenlasku
@@ -282,7 +282,7 @@ nop             0x00               no operation, kuluttaa vähän aikaa
 pop             0x57               ota sana pinosta, heitä pois
 arraylength     0xbe               pinon päällä viitatun taulukon pituus
 athrow          0xbf               aiheuta keskeytys
-new  House      0xbb  0x00 0x03    luo uusi House-tyyppinen olio (instanssi)  
+new  House      0xbb  0x00 0x03    luo uusi House-tyyppinen olio (instanssi)
 ```
 
 ## Esimerkki tavukoodin käytöstä
@@ -293,9 +293,9 @@ k = i+5;
 
 if (k=10)
     j=i;
-else 
+else
     j=k;
-``` 
+```
 
 Kokonaislukuarvoiset muuttujat _i_, _j_ ja _k_ ovat paikallisia muuttujia kehyksen osoitteissa 7, 8 ja 9. Jos tavukoodinen koodinpätkä alkaa tavusta 100 (desimaaliluku), niin tästä voisi generoitua tavukoodi
 
@@ -304,10 +304,10 @@ tavukoodi tekstinä       heksadesimaalina
 
 strt  iload i            100:   0x15 0x07
       bipush 5           102:   0x10 0x05
-      iadd               104:   0x60   
+      iadd               104:   0x60
       dup                105:   0x59             k tarvitaan kohta taas
-      istore k           106:   0x36 0x09     
-      
+      istore k           106:   0x36 0x09
+
       bipush 10          108:   0x10 0x0A        k oli pinossa jo
       if_icmpeq else     110:   0x0f 0x00 0x0A   110+10=120
 if10  iload i            113:   0x15 0x07
@@ -320,8 +320,3 @@ done  nop                124:   0x00
 
 Tavun 105 käsky _dup_ käyttö on jo vähän koodin optimointia. Lisäoptimoinnilla koodi voisi ehkä olla vielä tehokkaampi. Esimerkiksi,  _istore j_ käskyt voisi yhdistää haarautumisen jälkeen tehtäväksi. Tällöin koodista tulisi kolme tavua lyhyempi, kun nop-käskyäkään ei enää tarvittaisi vain haarautumisen loppuosoitetta varten.
 
-<!-- Quizit 9.2.  JVM -->
-
-<div><quiz id="c56b3218-6453-5113-9b5c-63752717e995"></quiz></div>
-<div><quiz id="f4874ff9-fedc-5c5c-aff7-2c3014100229"></quiz></div>
-<div><quiz id="aeb0a4da-0d88-56dd-be7b-9605319a95ad"></quiz></div>
