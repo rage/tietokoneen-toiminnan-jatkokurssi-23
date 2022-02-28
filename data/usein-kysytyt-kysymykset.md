@@ -18,9 +18,9 @@ Tämä tarkoittaa niin suurempia rakenteellisia ehdotuksia kuin esitystapaan lii
 Useat henkilöt ovat antaneet hyvää palautetta kurssin kehittämiseksi. Kiitos Ilari Aho, Julia Bergman, Laura Byman, Sakari Ekroth, Bo Feng, Ilari Haho, Antti Halmetoja, Samuli Hanski, Heidi Holappa, Ville Koivula, Heikki Kumpare, Harri Kähkönen, Sami Laine, Ahti Leppänen, Juri Malinen, Joonas Partanen, Touko Sandström, Mikko Siitonen ja Nico Toikka.
 
 ### Korjausehdotukset sähköpostitse
-Lähettäkää korjausehdotukset sähköpostitse osoitteella [harri.kahkonen@helsinki.fi](mailto:harri.kahkonen@helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20jatkokurssi&body=Luku%20???%20tai%20Quiz%20???%20...).
+Lähettäkää korjausehdotukset sähköpostitse osoitteella [harri.kahkonen@helsinki.fi](mailto:harri.kahkonen@helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20jatkokurssi%202022&body=Luku%20???%20tai%20Quiz%20???%20...).
 
-Laittakaa sähköpostin otsakkeeksi "MOOC palaute, Tietokoneen toiminnan jatkokurssi".
+Laittakaa sähköpostin otsakkeeksi "MOOC palaute, Tietokoneen toiminnan jatkokurssi 2022".
 
 Kirjatkaa palautteen alkuun tarkka paikka, jota palaute koskee. Esimerkiksi, "Luku 5.2 (Ohjelmoinnin peruskäsitteet...), kappaleen "Käsiteltävä tieto ..." kolmas lause.
 
