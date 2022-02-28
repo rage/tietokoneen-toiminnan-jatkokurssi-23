@@ -10,14 +10,14 @@ Tietokoneen toiminnan jatkokurssi (3 op) on kaikille avoin ja ilmainen verkkokur
 
 Lähtötietoina kurssilla kurssin Tietokoneen toiminnan perusteet (esimerkiksi Helsingin yliopiston Tietokoneen toiminnan perusteet MOOC) ja jonkin korkean tason kielen ohjelmointikurssin (esimerkiksi Helsingin yliopiston Ohjelmoinnin alkeet MOOC) tiedot.
 
-Kurssiin sisältyy erilaisia tehtäviä Mooc-, Moodle- ja Titotrainer -oppimisympäristöissä. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki tehtävät ja opiskelee koko materiaalin. Huomaa, että kurssikokeessa oletetaan, että opiskelija hallitsee Tietokoneen toiminnan perusteet -kurssin ja Tietokoneen toiminnan jatkokurssin koko kurssimateriaalin asiat, ei siis pelkästään tehtävissä kysytyt asiat.
+Kurssiin sisältyy erilaisia tehtäviä Mooc-, Moodle- ja Titotrainer -oppimisympäristöissä. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki tehtävät ja opiskelee koko materiaalin. Huomaa, että kurssikokeessa oletetaan, että opiskelija hallitsee Tietokoneen toiminnan perusteet -kurssin ja Tietokoneen toiminnan jatkokurssin kurssimateriaalin asiat, ei siis pelkästään tehtävissä kysytyt asiat.
 
 ## Opettajien yhteystiedot
 Kurssin opettajina toimivat Harri Kähkönen ja Heini Auvinen:
 
-1.3.2022 - 30.6.2022 Heini Auvinen
+**1.3.2022 - 30.6.2022 Heini Auvinen**
 
-1.7.2022 - 1.11.2022 Harri Kähkönen
+**1.7.2022 - 1.11.2022 Harri Kähkönen**
 
 Sähköpostiosoitteet ovat muotoa etunimi.sukunimi@helsinki.fi.
 
