@@ -40,16 +40,9 @@ const DropdownMenu = ({ selectedVariant, setSelectedVariant }) => {
           />
         }
       >
-        <MenuItem value={"avoin-kesa-2020"}>
-          Avoin yliopisto, Tietokoneen toiminnan jatkokurssi, kesä 2020
+        <MenuItem value={"avoin-2022"}>
+          Tietokoneen toiminnan jatkokurssi 2022
         </MenuItem>
-        <MenuItem value={"avoin-kevät-2020"}>
-          Avoin yliopisto, Tietokoneen toiminnan jatkokurssi, kevät 2020
-        </MenuItem>
-        <MenuItem value={"hy-syksy-2019"}>
-          Helsingin yliopisto, Tietokoneen toiminta, syksy 2019
-        </MenuItem>
-        <MenuItem value={"itsenainen"}>Itsenäinen opiskelu, 2019-2020</MenuItem>
       </Select>
     </StyledFormControl>
   )
