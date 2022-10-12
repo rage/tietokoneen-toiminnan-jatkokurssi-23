@@ -53,7 +53,7 @@ Koe suoritetaan kurssin Moodle-sivulla. Koeaika on 2,5 tuntia. Koe kuitenkin pä
 
 ### Arvosanojen määräytyminen
 
-Kokeen enimmäispistemäärä on 30 kurssipistettä ja tehtävien 30 kurssipistettä. Yhteensä kurssipisteitä on siis saatavana 60. Kunhan koepisteitä on vähintään puolet, tehtävistä saatujen kurssipisteiden ja koepisteiden yhteissumman mukaan arvosanarajat ovat seuraavat:
+Kokeen enimmäispistemäärä on 30 kurssipistettä ja tehtävien 30 kurssipistettä. Yhteensä kurssipisteitä on siis saatavana 60. Kunhan koepisteitä on vähintään puolet kokeen enimmäispistemäärästä, tehtävistä saatujen kurssipisteiden ja koepisteiden yhteissumman mukaan arvosanarajat ovat seuraavat:
 
 - 50 pistettä -> 5  
 - 45 pistettä -> 4  
