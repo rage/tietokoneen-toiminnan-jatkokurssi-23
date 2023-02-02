@@ -147,7 +147,7 @@ y 	dc 	15           -->  ?:           15        y: ?
 
 st   in   r1, =kbd   -->  0:   3 1 0 0   1      st: 0
      jzer r1, done   -->  1:  34 1 0 0   ?    done: ?
-     out r1, =crt    -->  5:   4 1 0 0   0
+     out r1, =crt    -->  2:   4 1 0 0   0
      jump st         -->  3:  32 0 0 0   0
 done svc sp,=halt    -->  4: 112 6 0 0  11    done: 4
                                                  x: 5
