@@ -65,5 +65,5 @@ Vastaa vielä alla olevaan kyselyyn, kun olet opiskellut tämän luvun asiat.
 
 <!-- summary quizit   -->
 
-<div><quiz id="96c1ef93-1f6b-5cf3-972b-49034b8cf919"></quiz></div>
+<div><quiz id="e5e5b5a2-ebcb-52e9-abf6-01e01eea2e14"></quiz></div>
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 updates = File.read("updates")
 
 paths = `find data -name '*.md'`.split("\n")

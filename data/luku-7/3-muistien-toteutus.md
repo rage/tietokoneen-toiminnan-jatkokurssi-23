@@ -64,4 +64,4 @@ Tämä luku käsitteli aluksi tietokonejärjestelmän sisäisiä virheensyntymek
 
 Vastaa alla olevaan kyselyyn, kun olet opiskellut tämän luvun aiheet.
 
-<div><quiz id="bacfbe6e-9828-5e18-8e2b-bdebd1438095"></quiz></div>
+<div><quiz id="396bac9c-1140-5209-be7e-98dfd09e53b8"></quiz></div>

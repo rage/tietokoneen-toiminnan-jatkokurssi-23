@@ -95,4 +95,4 @@ Tämä luku käsitteli aliohjelmien toteutusta. Kävimme läpi arvo- ja viitepar
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 
-<div><quiz id="04aa3879-6945-502e-8627-68da6f3b0b5f"></quiz></div>
+<div><quiz id="2c57c3e0-3c4b-55bd-87e4-dd8d7fe6e8bc"></quiz></div>

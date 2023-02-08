@@ -44,28 +44,28 @@ luku = 9
 Quiz binääriluvut 1
 -->
 
-<div><quiz id="17c1e89b-8f4f-434b-9dba-d85a04e668c9"></quiz></div>
+<div><quiz id="9e1b459f-28eb-55df-ae0d-11e5f6abe150"></quiz></div>
 <!--
 Quiz binääriluvut 2
 -->
-<div><quiz id="a2a0ee7a-095f-4387-b428-7d21ebf3251c"></quiz></div>
+<div><quiz id="561e6e0f-6a02-5566-a4ec-3f1e20cda6cf"></quiz></div>
 <!--
 Quiz binääriluvut 3
-13e5e8d1-c762-4526-97e6-c27eaed1e19c
+7c858955-b39d-59dc-8808-c2790e1988c8
 -->
-<div><quiz id="13e5e8d1-c762-4526-97e6-c27eaed1e19c"></quiz></div>
+<div><quiz id="7c858955-b39d-59dc-8808-c2790e1988c8"></quiz></div>
 
 <!--
 Quiz Binääriluvut 4
-7488e46c-69fe-419e-8356-b4e9b3925938
+8246018c-2769-56f2-8911-cc8fe6b9d713
 
 -->
-<div><quiz id="7488e46c-69fe-419e-8356-b4e9b3925938"></quiz></div>
+<div><quiz id="8246018c-2769-56f2-8911-cc8fe6b9d713"></quiz></div>
 <!--
 Quiz binääriluvut 5
-fc9e2af3-21a7-45b1-a73c-8abbb1062fd8
+4e12916c-e174-5ddd-ad34-f56c94aec7bd
 -->
-<div><quiz id="fc9e2af3-21a7-45b1-a73c-8abbb1062fd8"></quiz></div>
+<div><quiz id="4e12916c-e174-5ddd-ad34-f56c94aec7bd"></quiz></div>
 
 
 ### Heksadesimaalijärjestelmä
@@ -107,13 +107,13 @@ Esimerkki: Luvun 0xCAFE muuntaminen binääriluvuksi
 Niinpä 0xCAFE = 0b 1100 1010 1111 1110.
 
 
-<div><quiz id="a1c638cf-a60a-4c75-b190-58e37ac740b6"></quiz></div>
+<div><quiz id="14752136-6b1c-586c-888c-5a200db6042d"></quiz></div>
 
-<div><quiz id="e118f74c-6a8c-48e6-8f1a-e695e0f1ccea"></quiz></div>
+<div><quiz id="adeec708-d238-534e-ad23-d6358628d2dc"></quiz></div>
 
-<div><quiz id="66be783b-a5b9-4121-ba7c-33661ffda408"></quiz></div>
+<div><quiz id="004a437a-9736-58df-a61b-a3042dda5825"></quiz></div>
 
-<div><quiz id="95d23e3f-a4fd-4457-a3e4-31ced6c9e6d7"></quiz></div>
+<div><quiz id="6224ca7e-6606-5a38-aaf0-9eec08697273"></quiz></div>
 
 
 

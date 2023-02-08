@@ -231,4 +231,4 @@ Tämä luvussa näytettiin ensin, kuinka virtuaalimuisti toimii ja kuinka se rat
 
 Vastaa alla olevaan kyselyyn, kun olet opiskellut tämän luvun asiat.
 
-<div><quiz id="12132a42-1ec9-5126-955b-37c448570697"></quiz></div>
+<div><quiz id="da7ff6ee-6364-5091-acec-ff8cbc73e530"></quiz></div>

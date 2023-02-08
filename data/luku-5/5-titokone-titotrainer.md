@@ -79,4 +79,4 @@ Tämä luku käsitteli konekielistä ohjelmointia esimerkkikonetta ttk-91 käytt
 
 Vastaa alla olevaan kyselyyn kun olet valmis luvun 5 tehtävien kanssa.
 
-<div><quiz id="abc2ea4f-466a-5368-8266-9773c2a5b9a4"></quiz></div>
+<div><quiz id="cb592fa8-c221-5a69-a71d-4a93f7067ec7"></quiz></div>

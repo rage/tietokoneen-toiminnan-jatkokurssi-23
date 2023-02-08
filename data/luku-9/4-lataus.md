@@ -55,5 +55,5 @@ Vastaa alla olevaan kyselyyn, kun olet opiskellut tämän luvun asiat.
 
 <!-- ### summary quizit lukuun 9 ??? -->
 
-<div><quiz id="189ca62e-97c8-567e-bb9e-bd69b4c5b864"></quiz></div>
+<div><quiz id="716f4349-3b44-54c0-921f-ce6bf474480e"></quiz></div>
 
