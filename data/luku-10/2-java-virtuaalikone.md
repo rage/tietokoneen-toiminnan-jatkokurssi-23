@@ -255,7 +255,7 @@ istore_3        0x3e          pop (LV+3)    tallenna kokonaislukuarvo sanana
 Kontrollinsiirtokäskyjä on paljon, koska eri tietotyypeille tarvitaan kullekin omat ehdolliset haarautumiskäskynsä.
 
 ```
-goto -27            0xa7 0x80 0x17   PC saa arvon PC-27, ehdoton hyppy taaksepäin
+goto -27            0xa7 0x80 0x1B   PC saa arvon PC-27, ehdoton hyppy taaksepäin
 if_icmpgt  +33      0xa3 0x00 0x21   vertaa pinon arvoja. Jos isompi, niin PC saa arvo PC+33
 if_icmpeq  -27      0x9f 0x80 0x1B   vertaa pinosn arvoja. Jos sama, niin PC saa arvo PC-27
 iflt  +33           0x9b 0x00 0x21   jos pinossa oleva arvo <0, niin PC saa arvon PC+33
