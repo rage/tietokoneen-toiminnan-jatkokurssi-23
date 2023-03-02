@@ -147,7 +147,7 @@ while (i<j) do {          /* C tai Java */
     x = T[i];
     T[i] = T[j];
     T[j] = x;
-    i++; j++;
+    i++; j--;
     }
 ```
 
@@ -159,7 +159,7 @@ do {                           /* C Sharp */
     x = T[i];
     T[i] = T[j];
     T[j] = x;
-    i++; j++;
+    i++; j--;
     }
 until i>j;
 ```
