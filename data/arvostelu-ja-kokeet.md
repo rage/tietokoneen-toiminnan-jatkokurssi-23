@@ -15,6 +15,9 @@ Suorittamalla kurssit Tietokoneen toiminnan perusteet (Avoin yliopisto, 2 op) ja
 ## Kurssin suorittaminen
 Kurssin suorittamiseen kuuluu tehtäviä ja koe.
 
+ <b style="color:#FF0000";>Tänne tulee lisätietoa kurssin suorittamisesta ja pisteytyksistä ennen kurssin alkamista.</b>
+
+<!--
 Suoritus on hyvin tehtäväpainotteinen. Kurssin pisteistä puolet saadaan tehtäviä tekemällä ja puolet kokeesta. Kurssin arvostelussa otetaan huomioon tehtävät, jotka on suoritettu ennen koetta, kuitenkin määräajat huomioiden. Jos osallistut useampaan kuin yhteen kokeeseen, arvostelu tehdään kokeen ja ennen kyseistä koetta tehtyjen tehtävien yhteispistemäärän perusteella.
 
 ### Tehtävät
@@ -65,4 +68,4 @@ Kokeen enimmäispistemäärä on 30 kurssipistettä ja tehtävien 30 kurssipiste
 ### Arvostelu muutoin kuin (Helsingin yliopiston) Avoimen yliopiston kurssina
 Kurssimateriaalia voi käyttää toisen asteen oppilaitoksissa (esim. lukioissa) oppilaitoksen määräämin kriteerein. Tällöin suoritus ei kuitenkaan välttämättä vastaa Helsingin yliopiston tutkintovaatimuksia vastaavaa kurssisuoritusta.
 
-
+-->

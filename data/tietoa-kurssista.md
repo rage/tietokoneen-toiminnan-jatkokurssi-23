@@ -10,16 +10,12 @@ Tietokoneen toiminnan jatkokurssi (3 op) on kaikille avoin ja ilmainen verkkokur
 
 Lähtötietoina kurssilla kurssin Tietokoneen toiminnan perusteet (esimerkiksi Helsingin yliopiston Tietokoneen toiminnan perusteet MOOC) ja jonkin korkean tason kielen ohjelmointikurssin (esimerkiksi Helsingin yliopiston Ohjelmoinnin alkeet MOOC) tiedot.
 
-Kurssiin sisältyy erilaisia tehtäviä Mooc-, Moodle- ja Titotrainer -oppimisympäristöissä. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki tehtävät ja opiskelee koko materiaalin. Huomaa, että kurssikokeessa oletetaan, että opiskelija hallitsee Tietokoneen toiminnan perusteet -kurssin ja Tietokoneen toiminnan jatkokurssin kurssimateriaalin asiat, ei siis pelkästään tehtävissä kysyttyjä asioita. Kurssin tehtävät on kuitenkin laadittu siten, että suurin osa osaamistavoitteista tulee niiden avulla opittua.
+Kurssiin sisältyy erilaisia tehtäviä Mooc- ja Moodle-oppimisympäristöissä. Pääosa kurssin tehtävistä sekä koe suoritetaan Moodle-oppimisympäristössä. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki tehtävät ja opiskelee koko materiaalin. Huomaa, että kurssikokeessa oletetaan, että opiskelija hallitsee Tietokoneen toiminnan perusteet -kurssin ja Tietokoneen toiminnan jatkokurssin kurssimateriaalin asiat, ei siis pelkästään tehtävissä kysyttyjä asioita. Kurssin tehtävät on kuitenkin laadittu siten, että suurin osa osaamistavoitteista tulee niiden avulla opittua. Kurssilla harjoitellaan ja syvennetään myös perusteet-kurssin asioita riittävästi jatkokurssin osaamistavoitteiden saavuttamisen varmistamiseksi.
 
 ## Opettajien yhteystiedot
-Kurssin opettajina toimivat Harri Kähkönen ja Heini Auvinen:
+Kurssin opettajana toimii Harri Kähkönen.
 
-**1.3.2022 - 30.6.2022 Heini Auvinen**
-
-**1.7.2022 - 1.11.2022 Harri Kähkönen**
-
-Sähköpostiosoitteet ovat muotoa etunimi.sukunimi@helsinki.fi.
+Sähköpostiosoite ovat muotoa etunimi.sukunimi@helsinki.fi.
 
 Tehtyäsi 20 pisteen verran kurssin mooc-ympäristössä tehtäviä, saat sähköpostiisi ilmoittautumislinkin, jolla pääset kurssin Moodle-alueelle. Jos mielestäsi sähköpostin olisi pitänyt jo saapua, tarkista roskapostikansio. Jos sinulla on kysyttävää ennen Moodleen pääsemistä, suositeltu yhteydenottotapa on sähköposti. Huomaa kuitenkin, että yliopiston roskapostisuodatus on varsin vahva, joten viestiä ei välttämättä huomata heti. Kun olet päässyt Moodle-alueelle, suositeltu yhteydenottotapa on Moodlen pikaviestit. Jos kysymyksesi on sellainen, että voit kysyä sitä kurssin julkisella [keskustelukanavalla Telegramissa](https://t.me/tkt_tito), saatat saada vastauksen nopeammin kurssikavereilta tai opettajilta. Älä kuitenkaan lähetä yksityisviestejä Telegramissa opettajille.
 
@@ -27,39 +23,35 @@ Tehtyäsi 20 pisteen verran kurssin mooc-ympäristössä tehtäviä, saat sähk�
 Kurssin arvostelusta voit lukea tarkemmin kohdassa [Arvostelu ja kokeet](arvostelu-ja-kokeet).
 
 ## Pääosa kurssista suoritetaan kurssin Moodle-alueella
-Kurssin pääasiallinen oppimateriaali ja pieni määrä pikatehtäviä on tällä verkkosivustolla. Koe, ohjeet kurssin suorittamiseksi ja pääosa kurssin tehtävistä tehdään kurssin Moodle-alueella.
-Tehtyäsi vähintään 20 pisteen verran mooc-pikatehtäviä, saat sähköpostiisi ilmoittautumislinkin. Ilmoittauduttuasi pääset jatkamaan opiskelua Moodle-oppimisympäristössä. Titotrainer-tehtäviä voit tehdä jo ennen kurssi-ilmoittautumista.
+Kurssin pääasiallinen oppimateriaali ja pieni määrä pikatehtäviä on tällä verkkosivustolla. Koe, ohjeet kurssin suorittamiseksi ja pääosa kurssin tehtävistä löytyvät kurssin Moodle-alueella.
+Tehtyäsi vähintään 20 pisteen verran mooc-pikatehtäviä, saat sähköpostiisi ilmoittautumislinkin. Ilmoittauduttuasi pääset jatkamaan opiskelua Moodle-oppimisympäristössä.
 
 ## Kurssin aikataulut
-Tässä on listattuna kurssin aikataulu koekohtaisesti. Huomatkaa, että kokeen perusteella tehdyssä arvostelussa huomioidaan vain ennen koetta tehdyt tehtävät. Määräajat ovat ehdottomia. Huolehdi siis itse, että olet esimerkiksi tallentanut vastauksesi oikeaan kohtaan ja tehnyt itse- ja vertaisarvioinnit ajoissa. Kurssikokeen suoritusaika on 2,5 tuntia kokeen aloittamisesta, päättyen kuitenkin viimeistään 19.00.
+Tässä on listattuna kurssin aikataulu koekohtaisesti. Huomatkaa, että kokeen perusteella tehdyssä arvostelussa huomioidaan vain ennen koetta tehdyt tehtävät. Määräajat ovat ehdottomia. Huolehdi siis itse, että olet esimerkiksi tallentanut vastauksesi oikeaan kohtaan ja tehnyt itsearvioinnit ajoissa. Kurssikokeen suoritusaika on 2,5 tuntia kokeen aloittamisesta, päättyen kuitenkin viimeistään 19:00.
 
-#### Määräajat ennen 26.4.2022 koetta:
-- PE 15.4. kello 23.59 Selitystehtävien palautus Moodleen (tämä on pyhäpäivä, mutta saa palauttaa jo aiemmin)
-- LA 16.4. kello 12.00 Selitystehtävien itse- ja vertaisarviointi aukeaa
-- PE 22.4. kello 23.59 Selitystehtävien itse- ja vertaisarviointi Moodlessa
-- TI 26.4. kello 16.00 Mooc-, Titotrainer- ja Moodletehtävät
-- TI 26.4. kello 16.00 - 19.00 Koe Moodlessa
+#### Määräajat ennen 25.4.2023 koetta:
+- KE 19.4. kello 23.59 Selitystehtävien palautus Moodleen.
+- TO 20.4. kello 12.00 Selitystehtävien itsearviointi aukeaa
+- TI 25.4. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- TI 25.4. kello 16.00 - 19.00 Koe Moodlessa
 
-#### Määräajat ennen 7.6.2022 koetta:
-- PE 27.5. kello 23.59 Selitystehtävien palautus Moodleen
-- LA 28.5. kello 12.00 Selitystehtävien itse- ja vertaisarviointi aukeaa.
-- PE 3.6. kello 23.59 Selitystehtävien itse- ja vertaisarviointi Moodlessa
-- TI 7.6. kello 16.00 Mooc-, Titotrainer- ja Moodletehtävät
-- TI 7.6. kello 16.00 - 19.00 Koe Moodlessa
+#### Määräajat ennen 23.5.2023 koetta:
+- KE 17.5. kello 23.59 Selitystehtävien palautus Moodleen.
+- TO 18.5. kello 12.00 Selitystehtävien itsearviointi aukeaa
+- TI 23.5. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- TI 23.5. kello 16.00 - 19.00 Koe Moodlessa
 
-#### Määräajat ennen 30.8.2022 koetta:
-- PE 19.8. kello 23.59 Selitystehtävien palautus Moodleen
-- LA 20.8. kello 12.00 Selitystehtävien itse- ja vertaisarviointi aukeaa.
-- PE 26.8. kello 23.59 Selitystehtävien itse- ja vertaisarviointi Moodlessa
-- TI 30.8. kello 16.00 Mooc-, Titotrainer- ja Moodletehtävät
-- TI 30.8. kello 16.00 – 19.00 Koe Moodlessa
+#### Määräajat ennen 22.6.2023 koetta:
+- KE 16.6. kello 23.59 Selitystehtävien palautus Moodleen.
+- TO 17.6. kello 12.00 Selitystehtävien itsearviointi aukeaa
+- TI 22.6. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- TI 22.6. kello 16.00 - 19.00 Koe Moodlessa
 
-#### Määräajat ennen 1.11.2022 koetta:
-- PE 21.10. kello 23.59 Selitystehtävien palautus Moodleen
-- LA 22.10. kello 12.00 Selitystehtävien itse- ja vertaisarviointi aukeaa.
-- PE 28.10. kello 23.59 Selitystehtävien itse- ja vertaisarviointi Moodlessa
-- TI 1.11. kello 16.00 Mooc-, Titotrainer- ja Moodletehtävät
-- TI 1.11. kello 16.00- 19.00  Koe Moodlessa
+#### Määräajat ennen 31.7.2023 koetta:
+- TI 25.7. kello 23.59 Selitystehtävien palautus Moodleen.
+- KE 26.7. kello 12.00 Selitystehtävien itsearviointi aukeaa
+- MA 31.7. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- MA 31.7. kello 16.00 - 19.00 Koe Moodlessa
 
 
 ## Kurssin mooc-materiaali
