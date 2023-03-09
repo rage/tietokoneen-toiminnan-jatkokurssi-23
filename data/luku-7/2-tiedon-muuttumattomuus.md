@@ -98,7 +98,7 @@ Jos 7-bittiseen ASCII-koodistoon lisätään pariteetti-bitti, niin koodijärjes
 Parillinen pariteetti
 
 'A' = 0x41 = 0100 0001
-'B' = 0x42 = 0100 0010   Hamming-etäisyys (A,B) = 3
+'B' = 0x42 = 0100 0010   Hamming-etäisyys (A,B) = 2
 'C' = 0xC3 = 1100 0011   Hamming-etäisyys (B,C) = 2
 muuttunut 'B' = 0100 0011   virheellinen data, pariteetti on väärin
 ```
