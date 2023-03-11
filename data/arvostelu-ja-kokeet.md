@@ -6,16 +6,32 @@ information_page: true
 ---
 
 
-Tietokoneen toiminnan jatkokurssi (3 op).
+# Tietokoneen toiminnan jatkokurssi (3 op) Avoimen yliopiston kurssina
 
-Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on 0-5/5. Kurssin perustietojen sivu on [täällä](https://studies.helsinki.fi/opintotarjonta/cur/otm-a7b105c5-a2e2-4d94-9db5-5c3956bdac5a/_Tietokoneen_toiminnan_jatkokurssi_). Kurssin suorittamiseen sisältyy tehtäviä Mooc-, Moodle- ja Titotrainer -oppimisympäristöissä sekä verkkokoe Moodle-oppimisympäristössä.
+Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on 0-5/5. Kurssin perustietojen sivu on [täällä](https://studies.helsinki.fi/opintotarjonta/cur/otm-a7b105c5-a2e2-4d94-9db5-5c3956bdac5a/_Tietokoneen_toiminnan_jatkokurssi_). Kurssin suorittamiseen sisältyy tehtäviä Mooc- ja Moodle-oppimisympäristöissä sekä verkkokoe Moodle-oppimisympäristössä.
 
 Suorittamalla kurssit Tietokoneen toiminnan perusteet (Avoin yliopisto, 2 op) ja Tietokoneen toiminnan jatkokurssi (Avoin yliopisto, 3 op) on suorittanut kurssia Tietokoneen toiminta (Helsingin yliopisto, 5 op) vastaavan opintokokonaisuuden. Näistä kursseista saa yhteensä enintään 5 op Helsingin yliopiston tutkintoa varten.
 
 ## Kurssin suorittaminen
 Kurssin suorittamiseen kuuluu tehtäviä ja koe.
+### TÄNNE TULEE LISÄÄ AIHEESTA KURSSIN ALKUUN MENNESSÄ.
 
- <b style="color:#FF0000";>Tänne tulee lisätietoa kurssin suorittamisesta ja pisteytyksistä ennen kurssin alkamista.</b>
+### Yhteistyö kurssin aikana ja suurten kielimallien käyttö
+
+Saat opiskella ja on jopa suositeltavaa opiskella yhdessä muiden opiskelijoiden kanssa. Muista kuitenkin, että jokaisen on tehtävä omat tehtävänsä ja palautettava yksilöllinen suoritus. Jos ratkaiset ongelmia muiden opiskelijoiden kanssa, omien ratkaisujen tekeminen tarkoittaa sitä, että kirjoitat ne itse omilla sanoillasi. Kahden identtisen (tai hyvin samankaltaisen) ratkaisun palauttaminen ei ole oma ratkaisu, vaan se katsotaan plagioinniksi. Koska samankaltaisia ratkaisuja voi syntyä yhdessä opiskellessa (vaikka kirjoitatkin omat ratkaisusi), ilmoita varmuuden vuoksi vastauksessasi, kenen kanssa olet yhteistyötä tehnyt.
+
+**Kokeen aikana yhteistyö ei ole sallittua millään tavalla.** Yhteistyö kokeessa katsotaan vilpiksi ja käsitellään [yliopiston ohjeiden mukaisesti](https://studies.helsinki.fi/instructions/article/what-cheating-and-plagiarism).
+
+### Suurten kielimallien (esim. ChatGPT ja vastaavat) käyttö: 
+
+Saat käyttää tekoälysovelluksia suorittaessasi Helsingin yliopiston Avoimen yliopiston kurssia Tietokoneen toiminnan jatkokurssi ajalla 13.3. - 31.7.2023 kurssin aikana ja kokeessa omalla riskilläsi, huomioiden seuraavat asiat:
+
+Oppimisesi kannalta tekoälyllä tuotettu ratkaisu ei juuri ole hyödyllinen. Lisäksi kurssikokeessa voi tulla hyvin kiire, jos et ole oppinut asioita kurssin aikana. **Erityisesti kannattaa huomioida, että tekoälysovelluksen antamat vastaukset eivät täytä luotettavan tiedon kriteereitä. Et voi siis vedota tekoälysovellukseen luotettavana lähteenä ja perusteluna vastauksesi oikeellisuudelle. Tekoälysovellukset antavat usein tyylikkäästi muotoiltuja, mutta vääriä vastauksia. Niinpä riski siihen, että et opi asioita, opit asioita väärin, menetät kurssipisteitä tehtävistä etkä osaa riittävästi kokeessa läpipäästäksesi on suuri.**
+
+Huomaa myös, että arvostelet osan itse palauttamistasi ratkaisuista itsearvioinnilla. Itsearvioinnin oikeellisuuden opettaja tarkistaa satunnaistarkistuksin. Jos palautat tekoälyllä tuotettuja ratkaisuja, sinun on joka tapauksessa kyettävä arvioimaan ratkaisun laatua ja oikeellisuutta ja siten hallittava aihe. Huomioi myös, että selitystehtävien ratkaisujen ei tarvitse olla täydellisesti muotoiltuja esseitä, joten et hyödy tekoälysovelluksen kyvystä tuottaa hyvin muotoiltua tekstiä. Tavoitteena tehtävissä on se, että opit kurssin osaamistavoitteet, joten riittää, että olet tuonut oleelliset kohdat esille vastauksessasi.
+
+Jos käytät kielimallia tuottaessasi palauttamasi ratkaisut, sinun on raportoitava kirjallisesti (vastauslomakkeessasi), mitä mallia (esim. ChatGPT, DeepL) käytit ja millä tavalla. Raportin on sisällettävä kysymykset, mitä esitit ja kielimallisovelluksen antamat vastaukset. Katso myös [yleiset yliopistotason ohjeet tekoälyn käyttämisestä](https://studies.helsinki.fi/instructions/article/using-ai-support-learning).
+
 
 <!--
 Suoritus on hyvin tehtäväpainotteinen. Kurssin pisteistä puolet saadaan tehtäviä tekemällä ja puolet kokeesta. Kurssin arvostelussa otetaan huomioon tehtävät, jotka on suoritettu ennen koetta, kuitenkin määräajat huomioiden. Jos osallistut useampaan kuin yhteen kokeeseen, arvostelu tehdään kokeen ja ennen kyseistä koetta tehtyjen tehtävien yhteispistemäärän perusteella.
