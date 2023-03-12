@@ -14,7 +14,8 @@ Suorittamalla kurssit Tietokoneen toiminnan perusteet (Avoin yliopisto, 2 op) ja
 
 ## Kurssin suorittaminen
 Kurssin suorittamiseen kuuluu tehtäviä ja koe.
-### TÄNNE TULEE LISÄÄ AIHEESTA KURSSIN ALKUUN MENNESSÄ.
+### Kurssin Moodlealue
+Kurssin Moodle-alueella on suurin osa kurssin tehtävistä. Myös koe suoritetaan siellä. Pääset Moodle-alueelle seuraavasti. Tee ensin täällä Mooc-sivustolla 20 pisteen verran tehtäviä, jonka jälkeen saat sähköpostiisi ilmoittautumislinkin. (Kannattaa varmistaa roskapostikansiosta, jos tiedät, että viestin olisi pitänyt tulla.) Ilmoittautumista seuraavana päivänä pääset kurssin Moodle-alueelle. Moodle-sivun linkki on kurssin [studies-sivulla](https://studies.helsinki.fi/opintotarjonta/cur/otm-1a5b0920-9e1c-4696-9c96-833e2060b2bc/TKT100052/_Tietokoneen_toiminnan_jatkokurssi_).
 
 ### Yhteistyö kurssin aikana ja suurten kielimallien käyttö
 
