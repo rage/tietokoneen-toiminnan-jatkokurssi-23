@@ -4,7 +4,7 @@ title: "Titokone ja TitoTrainer"
 ---
 
 <div>
-<lead>Kurssin oppimistavoitteisiin sisältyy konekielisen ohjelmoinnin perusteet. Konekielistäkään ohjelmointia ei opi ilman harjoittelua. Titokone on ttk-91 ohjelmien kehittämis- ja suoritusympäristö. TitoTrainer on Titokoneen päälle rakennettu harjoitteluympäristö, jossa annettujen ttk-91 ohjelmointitehtävien vastauksien oikeellisuus tarkistetaan automaattisesti.</lead>
+<lead>Kurssin oppimistavoitteisiin sisältyy konekielisen ohjelmoinnin perusteet. Konekielistäkään ohjelmointia ei opi ilman harjoittelua. Titokone on ttk-91 ohjelmien kehittämis- ja suoritusympäristö.</lead>
 </div>
 
 ## Titokone
@@ -23,7 +23,7 @@ _Graafinen käyttöliittymä_ kokoaa kaikki edellä mainitut komponentit yhteen,
 ### Titokoneen käyttö
 Titokonetta on tarkoitus käyttää symbolisen konekielen perusteiden harjoitteluun. Ohjelmat kirjoitetaan tekstieditorilla ttk-91 symbolisella konekielellä, ladataan Titokoneelle, käännetään ja lopuksi suoritetaan simulaattorissa hyödyntäen ohjelmiston kehitysympäristöä ja animaattoria.
 
-Titokoneen omalle koneelle asennettavat eri versiot ja käyttöohjeet löytyvät verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Titokoneen verkkosivulla on useita eri [jar](https://en.wikipedia.org/wiki/JAR_(file_format))-paketteja. Suosittelen käyttämään versiota [titokone_1.203.jar](https://www.cs.helsinki.fi/group/titokone/distr/titokone-1.203.jar), koska sitä käytetään seuraavaksi esiteltävässä TitoTrainer'issa. Helpoin tapa suorittaa Titokonetta on ladata (klikkaamalla ylläolevaa linkkiä) sen jar-paketti omalle koneelle ja avata se Javan suoritusympäristössä ([JRE](https://en.wikipedia.org/wiki/JRE), Java Runtime Environment).
+Titokoneen omalle koneelle asennettavat eri versiot ja käyttöohjeet löytyvät verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Titokoneen verkkosivulla on useita eri [jar](https://en.wikipedia.org/wiki/JAR_(file_format))-paketteja. Suosittelen käyttämään uusinta versiota [1.400](https://github.com/titokone/titokone/releases/download/titokone-1.4.0/titokone-1.400.jar). Helpoin tapa suorittaa Titokonetta on ladata (klikkaamalla ylläolevaa linkkiä) sen jar-paketti omalle koneelle ja avata se Javan suoritusympäristössä (JRE, Java Runtime Environment).
 
 Java-ohjelmien suorittamista varten järjestelmässäsi täytyy olla asennettuna jokin Javan suoritusympäristö. Se voi olla Oraclen oma toteutus (esim. _Java SE_) tai avoimen lähdekoodin toteutus (esim. _OpenJDK (Java)_ tai _Amazon Corretto_). Viimeksi mainitut ympäristöt löytyvät Windows'in Software Center'istä, joka löytyy Windows-haulla näytön vasemmasta alanurkasta hakusanalla "Software Center" (Windows-10). Javan asentamista varten on ohjeita myös [täällä](https://materiaalit.github.io/tmc-asennus/netbeans_for_linux/).
 
@@ -31,30 +31,9 @@ Titokoneen verkkosivulta löytyy myös sen [käyttöohje](https://www.cs.helsink
 
 Samalta verkkosivulta löytyy myös kokoelma ttk-91 esimerkkiohjelmia, hakemistossa [esimerkit](https://www.cs.helsinki.fi/group/nodes/kurssit/tito/esimerkit/). Voit ladata ne omalle koneellesi, ja valita ne sitten Titokoneelle syötteeksi käännöstä ja suoritusta varten.
 
-## TitoTrainer
-TitoTrainer on ttk-91 symbolisen konekielisen ohjelmoinnin harjoitteluympäristö. Se sisältää noin 50 ttk-91 ohjelmoinnin harjoitustehtävää. TitoTrainer pitää kirjaa kunkin opiskelijan edistymisestä.
+Tietojenkäsittelytieteilijänä tule asentamaan omatoimisesti suuria määriä ohjelmistoja itsenäisesti. Jos yllä olevista ohjeista ei ole hyötyä JRE:n asentamiseen, tee esimerkiksi Google-haku "How to install JRE in Windows", jos asennat Windowsiin.
 
-Tehtävissä pyydetään toteuttamaan joko kokonainen ttk-91 ohjelma tai sen osa. Kun tehtävän vastaus on valmis, opiskelija painaa Lähetä-nappia. Järjestelmä kääntää ja suorittaa näin määritellyn ohjelman Titokoneessa (versio 1.203) ja antaa palautteessaan tiedon ohjelman oikeellisuudesta sekä rekistereiden, muistin ja symbolitaulun sisällöstä suorituksen päättymishetkellä. Virhetilanteissa se voi antaa myös vihjeitä virheen laadusta.
-
-TitoTraineria ei ole integroitu Titokoneen ohjelmiston kehitysympäristöön, joten isompien ohjelmointiongelmien sattuessa tehtävä kannattaa ratkaista ensin Titokoneessa ja sitten kopioida toimiva vastaus TitoTraineriin. Jos TitoTrainer-tehtävässä pyydetään toteuttamaan vain ohjelman osa, niin muista kopioida myös valmiiksi annetut ohjelman osat Titokoneella testattavaan ohjelmaan. Vastaavasti, muista tässä tapauksessa kopioida vain pyydetty ohjelman osa TitoTraineriin.
-
-TitoTraineria käytetään suoraan yliopiston palvelimella osoitteessa [TitoTrainer2](http://titotrainer2.users.cs.helsinki.fi/). Luo sinne oma tunnus ja kirjaudu kurssille **MOOC 2022**. Jos olet aiemmin luonut tunnuksen ja valinnut jonkin muun kurssin, luo uusi tunnus eri sähköpostiosoitteella. Jos TitoTrainer ei jostain syystä tunnu toimivan (verkkosivu valittaa sisäisestä virheestä, tms), se täytyy käynnistää uudelleen.  Lähetä ongelmasta sähköpostia osoitteeseen mailto:atk-apu@cs.helsinki.fi, jolloin tilanne korjataan yleensä aika pian. Joidenkin päivitysten jälkeen TitoTrainer ei vain käynnisty uudelleen automaattisesti, vaikka näin pitäisi tapahtua.
-
-### TitoTrainer tehtävät
-Tito-Trainer tehtävissä on niiden nimen alussa luokittelutietoa (esim. a-150 Simppeli koodisegmentti), jossa ensimmäisenä oleva kirjain kertoo päätason:
-
-```
-a. aloittelija, yksinkertainen koodi, if-then-else, silmukat
-b. monimutkaisempaa koodia, tietorakenteiden käyttö
-c. aliohjelmien kutsuminen, konekielen hyvä ymmärrys, koodin optimointi
-d. aliohjelmien toteutus, moniulotteiset taulukot
-e. kokonaiset ohjelmat aliohjelmineen, laiteajuri
-f. itseään muokkaavaa koodia ynnä muuta kivaa
-```
-
-Päätason perässä oleva kolminumeroinen luku kertoo päätason sisällä vaikeusasteen (100=helppo, 900=vaikea). On suositeltavaa, että tehtävät tehdään tasojärjestyksessä helpoimmasta vaikeampaan. Vaikeusasteella 700 tehtävät millä tahansa tasolla voivat olla haastavia. Vaikeusasteen 900 tehtävät menevät jo syventävien oppimistavoitteiden puolelle.
-
-Ohjelmointi on hauskaa ja siten myös konekielinen ohjelmointi. Älä kuitenkaan käytä kaikkea aikaasi näiden 50 tehtävän tekemiseen, koska kurssilla on paljon muutakin opittavaa. Hyvä tavoite olisi tehdä vaikeusasteen 100 - 660 tehtävät tasoilla a - e.
+Ohjelmointi on hauskaa ja siten myös konekielinen ohjelmointi. Älä kuitenkaan käytä kaikkea aikaasi ohjelmointiin, koska kurssilla on paljon muutakin opittavaa.
 
 Perustavoitteet symbolisella konekielellä ohjelmoinnille tällä kurssilla ovat seuraavat. Osaat toteuttaa symbolisella ttk-91 konekielellä erilaisten tietorakenteiden (muuttujat, 1- ja 2-ulotteiset taulukot, tietueet) muistivaraukset ja niihin viittaamiset. Osaat käyttää tietorakenteita myös osoitinmuuttujien avulla. Osaat toteuttaa koodissa haarautumiset ja erilaiset toistolauseet. Osaat käyttää (seuraavassa luvussa esiteltäviä) aliohjelmia ja funktioita sekä toteuttaa ne. Osaat selittää, mikä on aktivointitietue ja aktivointitietuepino. Osaat käyttää arvo- ja viiteparametreja. Osaat varata globaaleja tietorakenteita ja aliohjelmien paikallisia tietorakenteita. Osaat viitata aliohjelmissa parametreihin sekä globaaleihin ja paikallisiin tietorakenteisiin.
 
@@ -75,7 +54,7 @@ William B. Shockley ja J. Presper Eckert kehittivät 1946 muistiteknologian, jok
 
 
 ## Yhteenveto
-Tämä luku käsitteli konekielistä ohjelmointia esimerkkikonetta ttk-91 käyttäen. Kertasimme ensin ttk-91 suorittimen rakenteen ja esittelimme, kuinka valinta- ja toistolauseet toteutetaan konekielellä. Sen jälkeen kävimme läpi rakenteisen tiedon toteutustapoja ja rakenteiseen tietoon viittaamista yleensä indeksoidun tiedonosoitusmoodin avulla. Tutustuimme koodin optimoinnin käsitteeseen ja muutamaan yksinkertaiseen tapaan toteuttaa optimoitua koodia. Lopuksi esittelimme konekielisen ohjelmoinnin harjoitteluympäristöt Titokone ja TitoTrainer.
+Tämä luku käsitteli konekielistä ohjelmointia esimerkkikonetta ttk-91 käyttäen. Kertasimme ensin ttk-91 suorittimen rakenteen ja esittelimme, kuinka valinta- ja toistolauseet toteutetaan konekielellä. Sen jälkeen kävimme läpi rakenteisen tiedon toteutustapoja ja rakenteiseen tietoon viittaamista yleensä indeksoidun tiedonosoitusmoodin avulla. Tutustuimme koodin optimoinnin käsitteeseen ja muutamaan yksinkertaiseen tapaan toteuttaa optimoitua koodia. Lopuksi esittelimme konekielisen ohjelmoinnin harjoitteluympäristön Titokone.
 
 Vastaa alla olevaan kyselyyn kun olet valmis luvun 5 tehtävien kanssa.
 
