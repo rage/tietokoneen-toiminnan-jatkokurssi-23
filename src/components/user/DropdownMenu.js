@@ -40,8 +40,8 @@ const DropdownMenu = ({ selectedVariant, setSelectedVariant }) => {
           />
         }
       >
-        <MenuItem value={"avoin-2022"}>
-          Tietokoneen toiminnan jatkokurssi 2022
+        <MenuItem value={"avoin-2023"}>
+          Tietokoneen toiminnan jatkokurssi 2023
         </MenuItem>
       </Select>
     </StyledFormControl>
