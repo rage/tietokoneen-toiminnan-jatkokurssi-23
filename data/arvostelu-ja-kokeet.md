@@ -8,7 +8,7 @@ information_page: true
 
 # Tietokoneen toiminnan jatkokurssi (3 op) Avoimen yliopiston kurssina
 
-Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on 0-5/5. Kurssin perustietojen sivu on [täällä](https://studies.helsinki.fi/opintotarjonta/cur/otm-a7b105c5-a2e2-4d94-9db5-5c3956bdac5a/_Tietokoneen_toiminnan_jatkokurssi_). Kurssin suorittamiseen sisältyy tehtäviä Mooc- ja Moodle-oppimisympäristöissä sekä verkkokoe Moodle-oppimisympäristössä.
+Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on 0-5/5. Kurssin perustietojen sivu on [täällä](https://studies.helsinki.fi/opintotarjonta/cur/otm-1a5b0920-9e1c-4696-9c96-833e2060b2bc/TKT100052/_Tietokoneen_toiminnan_jatkokurssi_). Kurssin suorittamiseen sisältyy tehtäviä Mooc- ja Moodle-oppimisympäristöissä sekä verkkokoe Moodle-oppimisympäristössä.
 
 Suorittamalla kurssit Tietokoneen toiminnan perusteet (Avoin yliopisto, 2 op) ja Tietokoneen toiminnan jatkokurssi (Avoin yliopisto, 3 op) on suorittanut kurssia Tietokoneen toiminta (Helsingin yliopisto, 5 op) vastaavan opintokokonaisuuden. Näistä kursseista saa yhteensä enintään 5 op Helsingin yliopiston tutkintoa varten.
 
