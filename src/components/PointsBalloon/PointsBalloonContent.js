@@ -103,7 +103,6 @@ class PointsBalloonContent extends React.Component {
                   <CourseProgress
                     data={this.state.data}
                     appliesForStudyRight={this.state.appliesForStudyRight}
-                    currentCourseVariant={this.state.currentCourseVariant}
                   />
                 </div>
               )}

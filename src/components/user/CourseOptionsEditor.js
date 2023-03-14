@@ -222,7 +222,7 @@ class CourseOptionsEditor extends React.Component {
                 />
               </Row>
 
-              <Row>
+              {/*               <Row>
                 <DropdownMenu
                   selectedVariant={
                     this.state.currentCourseVariant ||
@@ -251,9 +251,9 @@ class CourseOptionsEditor extends React.Component {
                       </Card>
                     </InfoBox>
                   </Row>
-                )}
+                )} */}
 
-              <Row>
+              {/*               <Row>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -265,9 +265,9 @@ class CourseOptionsEditor extends React.Component {
                   }
                   label="Aion hakea aikataulutetun Ohjelmoinnin MOOCin kautta opinto-oikeutta Helsingin yliopistoon."
                 />
-              </Row>
+              </Row> */}
 
-              <Row>
+              {/*               <Row>
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -279,7 +279,7 @@ class CourseOptionsEditor extends React.Component {
                   }
                   label="Olen tällä hetkellä opiskelijana Digital Education for All -hankkeessa. Jätä tämä valitsematta mikäli et tiedä kyseisestä hankkeesta."
                 />
-              </Row>
+              </Row> */}
 
               <Row>
                 <FormControlLabel
@@ -336,11 +336,10 @@ class CourseOptionsEditor extends React.Component {
 
           <p>
             Tutkimusdatan hallinnasta vastaa Helsingin yliopiston
-            tietojenkäsittelytieteen laitoksen Agile Education Research -ryhmän
-            Arto Hellas. Anonymisoimattomaan tutkimusdataan eivät pääse käsiksi
-            muut tutkijat. Voit myös pyytää milloin tahansa sinusta kerätyn
-            datan poistamista lähettämällä sähköpostin osoitteeseen
-            arto.hellas@cs.helsinki.fi
+            tietojenkäsittelytieteen laitoksen MOOC-keskus. Anonymisoimattomaan
+            tutkimusdataan eivät pääse käsiksi muut kuin keskuksen tutkijat.
+            Voit myös pyytää milloin tahansa sinusta kerätyn datan poistamista
+            lähettämällä sähköpostin osoitteeseen mooc@cs.helsinki.fi
           </p>
 
           <p>

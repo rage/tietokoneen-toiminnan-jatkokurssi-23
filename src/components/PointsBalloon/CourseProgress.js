@@ -1,15 +1,9 @@
 import React from "react"
 import PartProgress from "./PartProgress"
 
-const CourseProgress = ({
-  data,
-  appliesForStudyRight,
-  currentCourseVariant,
-}) => {
+const CourseProgress = ({ data, appliesForStudyRight }) => {
   return (
-    data &&
-    (currentCourseVariant === "ohja-dl" ||
-    currentCourseVariant === "ohja-nodl" ? (
+    data && (
       <div>
         {Object.entries(data).map(([name, data]) => {
           return (
@@ -21,31 +15,7 @@ const CourseProgress = ({
           )
         })}
       </div>
-    ) : (
-      <div>
-        {Object.entries(data).map(([name, data]) => {
-          if (name === "osa08") {
-            return (
-              <div>
-                <PartProgress
-                  appliesForStudyRight={appliesForStudyRight}
-                  name={name}
-                  data={data}
-                />
-              </div>
-            )
-          } else {
-            return (
-              <PartProgress
-                appliesForStudyRight={appliesForStudyRight}
-                name={name}
-                data={data}
-              />
-            )
-          }
-        })}
-      </div>
-    ))
+    )
   )
 }
 
