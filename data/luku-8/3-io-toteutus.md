@@ -64,10 +64,12 @@ CmdPrint  equ 1    # tulostuskomento
 ```
 
 ### I/O-tyypit
-I/O-laitteet voidaan luokitella kolmeen eri tyyppiin sen mukaan, miten niiden laiteohjaimet on liitetty järjestelmään. Kaikki laiteohjaimet liitetään samaan väylähierarkiaan, mutta laitteiden funktionaalisuudessa on eroja.
+I/O-laitteet voidaan luokitella kolmeen eri tyyppiin sen mukaan, miten niiden laiteohjaimet on liitetty järjestelmään. Kaikki laiteohjaimet liitetään samaan väylähierarkiaan, mutta laitteiden funktionaalisuudessa on eroja. Kuten luvussa 2 kerrottiin, niin väylän voi jakaa kolmeen komponenttiin: dataväylässä siirtyy data, osoiteväylässä muistiosoitteet ja kontrolliväylässä väylänhallintaan (ja I/O-laitekeskeytyksiin) liittyvät signaalit.
+
+Alla selitetään suoran, epäsuoran ja DMA I/O:n toteutus. Huomaa, että muistiinkuvatussa I/O:ssa suoritin kirjoittaa ja lukee laiteohjaimen rekistereiden arvoja välittäen rekisterin osoitteen osoiteväylälle ja komennon lukea tai kirjoittaa kontrolliväylälle. Niinpä sen lisäksi mitä alla väyläliitäntöihin liittyen kerrotaan, laiteohjain tarvitsee aina myös lukuyhteyden osoiteväylään ja kontrolliväylään. Osoiteväylän lukuyhteys tarvitaan, jotta laiteohjain voi tunnistaa osoiteväylän osoitteen kuuluvan omaan osoiteavaruuteensa ja siten tietää, mitä sen rekisteriä tarkoitetaan. Kontrolliväylän lukuyhteys tarvitaan, jotta se tietää pitääkö dataväylällä oleva arvo tallentaa laiteohjaimen rekisteriin vai pitääkö rekisterin arvo siirtää dataväylälle.
 
 #### Suora I/O (Direct I/O, Programmed I/O)
-Kaikkein yksinkertaisin toteutus on suora I/O, jota käyttävät laitteet tarvitsevat väyläliittymän ainoastaan sen _dataväylän_ osalta. Kuten luvussa 2 kerrottiin, niin väylän voi jakaa kolmeen komponenttiin: dataväylässä siirtyy data, osoiteväylässä muistiosoitteet ja kontrolliväylässä väylänhallintaan (ja I/O-laitekeskeytyksiin) liittyvät signaalit.
+Kaikkein yksinkertaisin toteutus on suora I/O, jota käyttävät laitteet tarvitsevat luku- ja kirjoitusyhteyden ainoastaan sen _dataväylän_ osalta.  
 
 Suorassa I/O:ssa laiteajuri (DD) ohjaa koko toimintaa ja pysyy suorituksessa koko I/O-toiminnan ajan. Laiteajuri antaa laitteelle (sen laiteohjainprosessille, DCP:lle) komennon kirjoittamalla kyseinen komento laiteohjaimen kontrollirekisteriin. Sen jälkeen DD aktiivisesti pollaa (lukee) tilarekisterin arvoa, kunnes DCP on ilmoittanut annetun komennon tulleen suoritetuksi.
 
@@ -82,13 +84,13 @@ Laiteajuri (DD) -- suora I/O
 ----------------------------
 
      load r1, =1          ; komento "Lue"
-     store r1, (KBControl)
+     store r1, @KBControl
 
-loop load r1, (KBStatus)  ; odota näppäintä, 1 = OK, negat. arvo = vika
+loop load r1, @KBStatus   ; odota näppäintä, 1 = OK, negat. arvo = vika
      jneg r1, KBError     ; näppäimistö rikki, ei kytketty, tms.
      jzer r1, loop
 
-     load r1, (KBData)    ; lue merkki laitteelta datarekisteristä
+     load r1, @KBData     ; lue merkki laitteelta datarekisteristä
      store r1, Buffer     ; vie merkki keskusmuistiin puskuriin
 
 
@@ -127,16 +129,16 @@ Laiteajuri (DD) -- keskeyttävä I/O
 ----------------------------------
 
      load r1, =1           ; komento "Lue"
-     store r1, (KBControl) ; kirjoita komento kontrollirekisteriin
+     store r1, @KBControl  ; kirjoita komento kontrollirekisteriin
 
      svc sp, =SLEEP        ; mene odotustilaan
 
      ... ; herää henkiin sitten joskus, kun käyttöjärjestelmä päättää
 
-     load r1, (KBStatus)   ; lue status, 1 = OK, negat. arvo = vika
+     load r1, @KBStatus   ; lue status, 1 = OK, negat. arvo = vika
      jneg r1, KBError      ; oliko jotain vialla?
 
-     load r1, (KBData)     ; lue merkki laitteelta
+     load r1, @KBData      ; lue merkki laitteelta
      store r1, Buffer      ; vie se keskusmuistiin
 
 
@@ -177,25 +179,27 @@ Laiteajuri (DD) -- DMA I/O
 --------------------------
 
      load r1, =Buffer     ; anna DCP:lle puskurin muistiosoite
-     store r1, (KBData)
+     store r1, @KBData 
 
      load r1, =1          ; komento "Lue" kontrollirekisteriin
-     store r1, (KBControl)
+     store r1, @KBControl 
 
      svc sp, =SLEEP       ; mene odotustilaan
 
      ... ; herää henkiin sitten joskus, kun käyttöjärjestelmä päättää
 
-     load r1, (KBStatus)  ; lue status, 1 = OK, negat. arvo = vika
+     load r1, @KBStatus   ; lue status, 1 = OK, negat. arvo = vika
      jneg r1, KBError     ; oliko jotain vialla?
 
 
 
 Laiteohjainprosessi (DCP)
 -------------------------
+; Esimerkissä symbolit Status, Control ja Data ovat laiteohjaimen sisäisiä 
+;  rekistereitä, joihin laiteohjainprosessi viittaa.
 
      load r1, =0          ; resetoi status
-     store r1, Status
+     store r1, Status     ; 
 
 wait load r1, Control    ; odota kunnes uusi pyyntö
      jnzer r1, wait
@@ -203,7 +207,7 @@ wait load r1, Control    ; odota kunnes uusi pyyntö
      ...    ; odota, kunnes jotain näppäintä painettu.
             ; painetun näppäimen koodi on r2:ssa
 
-     store r2, &Data     ; talleta näppäinkoodi suoraan muistiin
+     store r2, @Data     ; talleta näppäinkoodi suoraan muistiin
 
      load r1, =1         ; ilmoita ajurille
      store r1, Status
@@ -219,7 +223,7 @@ Transistorin kehittivät W.B. Shockley, J. Bardeen ja W. Brattain Bell Labsin tu
 
 <!-- kuva: ch-8-1-ch-8-3-trans-mikropros    -->
 
-![Vasemmalla kuva ensimmäisestä transitorissa. Se on asennettu (nyt) muovitelineeseen, jossa alhaalla on eri metalleja epämäääräisissä kerroksissa. Välissä on jokin eriste. Metallit on kytketty toisiinsa sekavalta näyttävien ohuempien ja paksumpien johtimien avulla. Oikealla on kuva Intel 4004 mikroprosessorista. Se on asennettu keraamisen eristeen päälle ja johtimet 16 alassojottavaan kuparijalkaan kulkevat keramiikan sisällä. ](./ch-8-3-trans-mikropros.svg)
+![Vasemmalla kuva ensimmäisestä transitorissa. Se on asennettu (nyt) muovitelineeseen, jossa alhaalla on eri metalleja epämääräisissä kerroksissa. Välissä on jokin eriste. Metallit on kytketty toisiinsa sekavalta näyttävien ohuempien ja paksumpien johtimien avulla. Oikealla on kuva Intel 4004 mikroprosessorista. Se on asennettu keraamisen eristeen päälle ja johtimet 16 alassojottavaan kuparijalkaan kulkevat keramiikan sisällä. ](./ch-8-3-trans-mikropros.svg)
 <div>
 <illustrations motive="ch-8-3-trans-mikropros"></illustrations>
 </div>
