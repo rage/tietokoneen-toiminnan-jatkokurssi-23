@@ -15,7 +15,7 @@ Kurssiin sisältyy erilaisia tehtäviä Mooc- ja Moodle-oppimisympäristöissä.
 ## Opettajien yhteystiedot
 Kurssin opettajana toimii Harri Kähkönen.
 
-Sähköpostiosoite ovat muotoa etunimi.sukunimi@helsinki.fi.
+Sähköpostiosoite on muotoa etunimi.sukunimi@helsinki.fi.
 
 Tehtyäsi 20 pisteen verran kurssin mooc-ympäristössä tehtäviä, saat sähköpostiisi ilmoittautumislinkin, jolla pääset kurssin Moodle-alueelle. Jos mielestäsi sähköpostin olisi pitänyt jo saapua, tarkista roskapostikansio. Jos sinulla on kysyttävää ennen Moodleen pääsemistä, suositeltu yhteydenottotapa on sähköposti. Huomaa kuitenkin, että yliopiston roskapostisuodatus on varsin vahva, joten viestiä ei välttämättä huomata heti. Kun olet päässyt Moodle-alueelle, suositeltu yhteydenottotapa on Moodlen pikaviestit. Jos kysymyksesi on sellainen, että voit kysyä sitä kurssin julkisella [keskustelukanavalla Telegramissa](https://t.me/tkt_tito), saatat saada vastauksen nopeammin kurssikavereilta tai opettajilta. Älä kuitenkaan lähetä yksityisviestejä Telegramissa opettajille.
 
@@ -36,21 +36,21 @@ Tässä on listattuna kurssin aikataulu koekohtaisesti. Huomatkaa, että kokeen 
 - TI 25.4. kello 16.00 - 19.00 Koe Moodlessa
 
 #### Määräajat ennen 23.5.2023 koetta:
-- KE 17.5. kello 23.59 Selitystehtävien palautus Moodleen.
+- TO 18.5. ennen kello 12.00 Selitystehtävien palautus Moodleen.
 - TO 18.5. kello 12.00 Selitystehtävien itsearviointi aukeaa
-- TI 23.5. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- TI 23.5. ennen kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
 - TI 23.5. kello 16.00 - 19.00 Koe Moodlessa
 
-#### Määräajat ennen 22.6.2023 koetta:
-- KE 16.6. kello 23.59 Selitystehtävien palautus Moodleen.
-- TO 17.6. kello 12.00 Selitystehtävien itsearviointi aukeaa
-- TI 22.6. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
-- TI 22.6. kello 16.00 - 19.00 Koe Moodlessa
+#### Määräajat ennen 20.6.2023 koetta:
+- TO 15.6. ennen kello 12.00 Selitystehtävien palautus Moodleen.
+- TO 15.6. kello 12.00 Selitystehtävien itsearviointi aukeaa
+- TI 20.6. ennen kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- TI 20.6. kello 16.00 - 19.00 Koe Moodlessa
 
 #### Määräajat ennen 31.7.2023 koetta:
-- TI 25.7. kello 23.59 Selitystehtävien palautus Moodleen.
+- KE 26.7. ennen kello 12.00 Selitystehtävien palautus Moodleen.
 - KE 26.7. kello 12.00 Selitystehtävien itsearviointi aukeaa
-- MA 31.7. kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
+- MA 31.7. ennen kello 16.00 Mooc- ja Moodletehtävät sekä Selitystehtävien itsearviointi Moodlessa
 - MA 31.7. kello 16.00 - 19.00 Koe Moodlessa
 
 
