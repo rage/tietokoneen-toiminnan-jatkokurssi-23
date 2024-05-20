@@ -6,6 +6,16 @@ information_page: true
 
 # Kurssin suorittamisesta
 
+<text-box variant="hint" name="Huomio">
+
+<notice>Huomaa, että tämä on vanha kurssisivu.</notice>
+
+</br>
+
+<b>Tietokoneen toiminnan jatkokurssi (3 op) verkkokurssista ei enää myönnetä opintopisteitä. Voit kuitenkin edelleen käyttää kurssimateriaalia ja tehdä tehtäviä itsenäisesti omaksi iloksesi. Jos etsit tapaa suorittaa Helsingin yliopiston Tietokoneen toiminta (5 op) -kurssin, lue lisää täältä [Tietokoneen toiminta 5 op](https://studies.helsinki.fi/kurssit/opintojakso/otm-70c80428-00d1-4a65-ad9c-a716cd49c3a8/TKT10005)</b>
+
+</text-box>
+
 Tietokoneen toiminnan jatkokurssi (3 op) on kaikille avoin ja ilmainen verkkokurssi. Kurssilla perehdytään tietokoneen perustoimintoihin. Kurssi on suoraan jatkoa Tietokoneen toiminnan perusteet -kurssille. Kurssin aluksi kerrataan ja syvennetään perusteet -kurssilla opittua. Sen jälkeen perehdymme kurssilla aluksi konekieliseen ohjelmointiin, tiedon muuttumattomuuden tarkistamiseen ja oheislaitteiden hallintaan. Näytämme sitten aikaisempaa tarkemmin, kuinka korkean tason kielestä saadaan kääntämällä, linkittämällä ja lataamalla käyttöjärjestelmän tuntema prosessi. Lopuksi esittelemme ohjelmien vaihtoehtoisen suoritustavan tulkinnan ja emuloinnin avulla.
 
 Lähtötietoina kurssilla kurssin Tietokoneen toiminnan perusteet (esimerkiksi Helsingin yliopiston Tietokoneen toiminnan perusteet MOOC) ja jonkin korkean tason kielen ohjelmointikurssin (esimerkiksi Helsingin yliopiston Ohjelmoinnin alkeet MOOC) tiedot.
